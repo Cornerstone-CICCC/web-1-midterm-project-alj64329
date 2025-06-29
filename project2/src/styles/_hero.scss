@@ -1,0 +1,11 @@
+@use 'variables';
+
+.hero-section{
+    height: 100;
+
+    .hero-content{
+        padding: 25rem 5rem 6rem 5rem;
+        font-size: 5rem;
+        align-items: end;
+    }
+}

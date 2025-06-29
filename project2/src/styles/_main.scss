@@ -1,0 +1,60 @@
+@use 'variables';
+@use 'header';
+@use 'hero';
+@use 'about';
+
+
+@import url( "https://fonts.googleapis.com/css2?family=Forum&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html, body{
+    font-family: "Forum", serif;
+    color:variables.$colorIvory;
+    background-image: linear-gradient(to bottom, #1A1B2E, #202334 75%, #2F3244 100%);
+    background-repeat: no-repeat;
+    // background-size: cover;
+}
+
+.c-space{
+    padding: 7rem 3rem 7rem 3rem;
+}
+
+h2{
+    font-size: 4rem;
+    padding-bottom: 2rem;
+    font-weight: normal;
+
+    .twinkle-hover{
+       position: relative;
+
+        &::after{
+            content: "✦";
+            font-weight: lighter;
+            position: absolute;
+            top: -10px;
+            right: -50px;
+            opacity: 0;
+            color: variables.$colorIvory;
+            animation: none;
+            pointer-events: none;
+        }
+    }
+    
+    &:hover .twinkle-hover::after{
+            animation: twinkle 2s ease-in-out forwards;
+        }
+}
+
+// animation
+@keyframes twinkle {
+    0%   { opacity: 0; transform: scale(0.2) rotate(0deg); }
+    50%  { opacity: 1; transform: scale(1.2) rotate(45deg); }
+    100% { opacity: 0; transform: scale(0.6) rotate(90deg); }
+}

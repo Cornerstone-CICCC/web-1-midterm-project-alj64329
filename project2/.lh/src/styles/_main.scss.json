@@ -1,0 +1,146 @@
+{
+    "sourceFile": "src/styles/_main.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 32,
+            "patches": [
+                {
+                    "date": 1751073523117,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1751073566098,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,16 @@\n+@import url( \"https://fonts.googleapis.com/css2?family=Forum&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap\");\r\n+\r\n+@import 'header';\r\n+@import 'variables';\r\n+\r\n+*{\r\n+    margin: 0;\r\n+    padding: 0;\r\n+    box-sizing: border-box;\r\n+    background-image: linear-gradient(to bottom, #1A1B2E, #202334 75%, #2F3244 100%);\r\n+}\r\n+\r\n+body{\r\n+    font-family: \"Forum\", serif;\r\n+    color:$colorIvory;\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751073776469,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,16 @@\n+@import url( \"https://fonts.googleapis.com/css2?family=Forum&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap\");\r\n+\r\n+@import 'header';\r\n+@use 'variables';\r\n+\r\n+*{\r\n+    margin: 0;\r\n+    padding: 0;\r\n+    box-sizing: border-box;\r\n+    background-image: linear-gradient(to bottom, #1A1B2E, #202334 75%, #2F3244 100%);\r\n+}\r\n+\r\n+body{\r\n+    font-family: \"Forum\", serif;\r\n+    color:$colorIvory;\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751073794982,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,16 @@\n+@import url( \"https://fonts.googleapis.com/css2?family=Forum&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap\");\r\n+\r\n+@import 'header';\r\n+@use 'variables';\r\n+\r\n+*{\r\n+    margin: 0;\r\n+    padding: 0;\r\n+    box-sizing: border-box;\r\n+    background-image: linear-gradient(to bottom, #1A1B2E, #202334 75%, #2F3244 100%);\r\n+}\r\n+\r\n+body{\r\n+    font-family: \"Forum\", serif;\r\n+    color:variables.$colorIvory;\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751073824124,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,17 @@\n+@import 'header';\r\n+@use 'variables';\r\n+\r\n+@import url( \"https://fonts.googleapis.com/css2?family=Forum&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap\");\r\n+\r\n+\r\n+*{\r\n+    margin: 0;\r\n+    padding: 0;\r\n+    box-sizing: border-box;\r\n+    background-image: linear-gradient(to bottom, #1A1B2E, #202334 75%, #2F3244 100%);\r\n+}\r\n+\r\n+body{\r\n+    font-family: \"Forum\", serif;\r\n+    color:variables.$colorIvory;\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751073832339,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,17 @@\n+@import 'header';\r\n+@use 'variables';\r\n+\r\n+@import url( \"https://fonts.googleapis.com/css2?family=Forum&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap\");\r\n+\r\n+\r\n+*{\r\n+    margin: 0;\r\n+    padding: 0;\r\n+    box-sizing: border-box;\r\n+    background-image: linear-gradient(to bottom, #1A1B2E, #202334 75%, #2F3244 100%);\r\n+}\r\n+\r\n+body{\r\n+    font-family: \"Forum\", serif;\r\n+    color:variables.$colorIvory;\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751073990261,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,18 @@\n+@use 'variables';\r\n+@import 'header';\r\n+\r\n+\r\n+@import url( \"https://fonts.googleapis.com/css2?family=Forum&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap\");\r\n+\r\n+\r\n+*{\r\n+    margin: 0;\r\n+    padding: 0;\r\n+    box-sizing: border-box;\r\n+    background-image: linear-gradient(to bottom, #1A1B2E, #202334 75%, #2F3244 100%);\r\n+}\r\n+\r\n+body{\r\n+    font-family: \"Forum\", serif;\r\n+    color:variables.$colorIvory;\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751074039244,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n @use 'variables';\r\n-@import 'header';\r\n+@use 'header';\r\n \r\n \r\n @import url( \"https://fonts.googleapis.com/css2?family=Forum&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap\");\r\n \r\n"
+                },
+                {
+                    "date": 1751074217944,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,19 @@\n+@use 'variables';\r\n+@use 'header';\r\n+\r\n+\r\n+@import url( \"https://fonts.googleapis.com/css2?family=Forum&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap\");\r\n+\r\n+\r\n+*{\r\n+    margin: 0;\r\n+    padding: 0;\r\n+    box-sizing: border-box;\r\n+    background-image: linear-gradient(to bottom, #1A1B2E, #202334 75%, #2F3244 100%);\r\n+}\r\n+\r\n+body{\r\n+    font-family: \"Forum\", serif;\r\n+    color:variables.$colorIvory;\r\n+    background-image: linear-gradient(to bottom, #1A1B2E, #202334 75%, #2F3244 100%);\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751211368966,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,19 @@\n+@use 'variables';\r\n+@use 'header';\r\n+\r\n+\r\n+@import url( \"https://fonts.googleapis.com/css2?family=Forum&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap\");\r\n+\r\n+\r\n+*{\r\n+    margin: 0;\r\n+    padding: 0;\r\n+    box-sizing: border-box;\r\n+    background-image: linear-gradient(to bottom, #1A1B2E, #202334 75%, #2F3244 100%);\r\n+}\r\n+\r\n+body{\r\n+    font-family: \"Forum\", serif;\r\n+    color:variables.$colorIvory;\r\n+    // background-image: linear-gradient(to bottom, #1A1B2E, #202334 75%, #2F3244 100%);\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751211482751,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,147 +8,13 @@\n *{\r\n     margin: 0;\r\n     padding: 0;\r\n     box-sizing: border-box;\r\n-    background-image: linear-gradient(to bottom, #1A1B2E, #202334 75%, #2F3244 100%);\r\n }\r\n \r\n-body{\r\n+html, body{\r\n     font-family: \"Forum\", serif;\r\n     color:variables.$colorIvory;\r\n-    // background-image: linear-gradient(to bottom, #1A1B2E, #202334 75%, #2F3244 100%);\r\n-}\n-@use 'variables';\r\n-@use 'header';\r\n-\r\n-\r\n-@import url( \"https://fonts.googleapis.com/css2?family=Forum&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap\");\r\n-\r\n-\r\n-*{\r\n-    margin: 0;\r\n-    padding: 0;\r\n-    box-sizing: border-box;\r\n     background-image: linear-gradient(to bottom, #1A1B2E, #202334 75%, #2F3244 100%);\r\n-}\r\n-\r\n-body{\r\n-    font-family: \"Forum\", serif;\r\n-    color:variables.$colorIvory;\r\n-    background-image: linear-gradient(to bottom, #1A1B2E, #202334 75%, #2F3244 100%);\r\n-}\n-@use 'variables';\r\n-@use 'header';\r\n-\r\n-\r\n-@import url( \"https://fonts.googleapis.com/css2?family=Forum&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap\");\r\n-\r\n-\r\n-*{\r\n-    margin: 0;\r\n-    padding: 0;\r\n-    box-sizing: border-box;\r\n-    background-image: linear-gradient(to bottom, #1A1B2E, #202334 75%, #2F3244 100%);\r\n-}\r\n-\r\n-body{\r\n-    font-family: \"Forum\", serif;\r\n-    color:variables.$colorIvory;\r\n-}\n-@import 'header';\r\n-@use 'variables';\r\n-\r\n-@import url( \"https://fonts.googleapis.com/css2?family=Forum&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap\");\r\n-\r\n-\r\n-*{\r\n-    margin: 0;\r\n-    padding: 0;\r\n-    box-sizing: border-box;\r\n-    background-image: linear-gradient(to bottom, #1A1B2E, #202334 75%, #2F3244 100%);\r\n-}\r\n-\r\n-body{\r\n-    font-family: \"Forum\", serif;\r\n-    color:variables.$colorIvory;\r\n-}\n-@import 'header';\r\n-@use 'variables';\r\n-\r\n-@import url( \"https://fonts.googleapis.com/css2?family=Forum&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap\");\r\n-\r\n-\r\n-*{\r\n-    margin: 0;\r\n-    padding: 0;\r\n-    box-sizing: border-box;\r\n-    background-image: linear-gradient(to bottom, #1A1B2E, #202334 75%, #2F3244 100%);\r\n-}\r\n-\r\n-body{\r\n-    font-family: \"Forum\", serif;\r\n-    color:variables.$colorIvory;\r\n-}\n-@import url( \"https://fonts.googleapis.com/css2?family=Forum&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap\");\r\n-\r\n-@import 'header';\r\n-@use 'variables';\r\n-\r\n-*{\r\n-    margin: 0;\r\n-    padding: 0;\r\n-    box-sizing: border-box;\r\n-    background-image: linear-gradient(to bottom, #1A1B2E, #202334 75%, #2F3244 100%);\r\n-}\r\n-\r\n-body{\r\n-    font-family: \"Forum\", serif;\r\n-    color:variables.$colorIvory;\r\n-}\n-@import url( \"https://fonts.googleapis.com/css2?family=Forum&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap\");\r\n-\r\n-@import 'header';\r\n-@use 'variables';\r\n-\r\n-*{\r\n-    margin: 0;\r\n-    padding: 0;\r\n-    box-sizing: border-box;\r\n-    background-image: linear-gradient(to bottom, #1A1B2E, #202334 75%, #2F3244 100%);\r\n-}\r\n-\r\n-body{\r\n-    font-family: \"Forum\", serif;\r\n-    color:$colorIvory;\r\n-}\n-@import url( \"https://fonts.googleapis.com/css2?family=Forum&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap\");\r\n-\r\n-@import 'header';\r\n-@import 'variables';\r\n-\r\n-*{\r\n-    margin: 0;\r\n-    padding: 0;\r\n-    box-sizing: border-box;\r\n-    background-image: linear-gradient(to bottom, #1A1B2E, #202334 75%, #2F3244 100%);\r\n-}\r\n-\r\n-body{\r\n-    font-family: \"Forum\", serif;\r\n-    color:$colorIvory;\r\n-}\n-@import url( \"https://fonts.googleapis.com/css2?family=Forum&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap\");\r\n-\r\n-@import 'header';\r\n-@import 'variables';\r\n-\r\n-*{\r\n-    margin: 0;\r\n-    padding: 0;\r\n-    box-sizing: border-box;\r\n-    background-image: linear-gradient(to bottom, #1A1B2E, #202334 75%, #2F3244 100%);\r\n-}\r\n-\r\n-body{\r\n-    font-family: \"Forum\", serif;\r\n-    color: variables.$colorIvory;\r\n+    background-repeat: no-repeat;\r\n+    background-size: cover;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751211497477,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,6 +15,6 @@\n     font-family: \"Forum\", serif;\r\n     color:variables.$colorIvory;\r\n     background-image: linear-gradient(to bottom, #1A1B2E, #202334 75%, #2F3244 100%);\r\n     background-repeat: no-repeat;\r\n-    background-size: cover;\r\n+    // background-size: cover;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751212201031,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n @use 'variables';\r\n @use 'header';\r\n+@use 'hero';\r\n \r\n \r\n @import url( \"https://fonts.googleapis.com/css2?family=Forum&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap\");\r\n \r\n"
+                },
+                {
+                    "date": 1751216771396,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,13 +9,18 @@\n *{\r\n     margin: 0;\r\n     padding: 0;\r\n     box-sizing: border-box;\r\n+    scroll-behavior: smooth;\r\n }\r\n \r\n html, body{\r\n     font-family: \"Forum\", serif;\r\n     color:variables.$colorIvory;\r\n     background-image: linear-gradient(to bottom, #1A1B2E, #202334 75%, #2F3244 100%);\r\n     background-repeat: no-repeat;\r\n     // background-size: cover;\r\n+}\r\n+\r\n+.c-space{\r\n+\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751216861249,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,6 +21,6 @@\n     // background-size: cover;\r\n }\r\n \r\n .c-space{\r\n-\r\n+    padding: 6rem 10px 6rem 10px;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751216911219,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,6 +21,6 @@\n     // background-size: cover;\r\n }\r\n \r\n .c-space{\r\n-    padding: 6rem 10px 6rem 10px;\r\n+    padding: 6rem 3rem 6rem 3rem;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751217156979,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,6 +21,10 @@\n     // background-size: cover;\r\n }\r\n \r\n .c-space{\r\n-    padding: 6rem 3rem 6rem 3rem;\r\n+    padding: 7rem 3rem 7rem 3rem;\r\n+}\r\n+\r\n+h2{\r\n+    font-size: 6rem;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751217163514,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,6 +25,6 @@\n     padding: 7rem 3rem 7rem 3rem;\r\n }\r\n \r\n h2{\r\n-    font-size: 6rem;\r\n+    font-size: 4rem;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751217561169,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n @use 'variables';\r\n @use 'header';\r\n @use 'hero';\r\n+@use 'about';\r\n \r\n \r\n @import url( \"https://fonts.googleapis.com/css2?family=Forum&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap\");\r\n \r\n"
+                },
+                {
+                    "date": 1751218558863,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,32 @@\n+@use 'variables';\r\n+@use 'header';\r\n+@use 'hero';\r\n+@use 'about';\r\n+\r\n+\r\n+@import url( \"https://fonts.googleapis.com/css2?family=Forum&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap\");\r\n+\r\n+\r\n+*{\r\n+    margin: 0;\r\n+    padding: 0;\r\n+    box-sizing: border-box;\r\n+    scroll-behavior: smooth;\r\n+}\r\n+\r\n+html, body{\r\n+    font-family: \"Forum\", serif;\r\n+    color:variables.$colorIvory;\r\n+    background-image: linear-gradient(to bottom, #1A1B2E, #202334 75%, #2F3244 100%);\r\n+    background-repeat: no-repeat;\r\n+    // background-size: cover;\r\n+}\r\n+\r\n+.c-space{\r\n+    padding: 7rem 3rem 7rem 3rem;\r\n+}\r\n+\r\n+h2{\r\n+    font-size: 4rem;\r\n+    padding-bottom: 3rem;\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751219774998,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,37 +27,6 @@\n }\r\n \r\n h2{\r\n     font-size: 4rem;\r\n-    padding-bottom: 3rem;\r\n-}\n-@use 'variables';\r\n-@use 'header';\r\n-@use 'hero';\r\n-@use 'about';\r\n-\r\n-\r\n-@import url( \"https://fonts.googleapis.com/css2?family=Forum&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap\");\r\n-\r\n-\r\n-*{\r\n-    margin: 0;\r\n-    padding: 0;\r\n-    box-sizing: border-box;\r\n-    scroll-behavior: smooth;\r\n-}\r\n-\r\n-html, body{\r\n-    font-family: \"Forum\", serif;\r\n-    color:variables.$colorIvory;\r\n-    background-image: linear-gradient(to bottom, #1A1B2E, #202334 75%, #2F3244 100%);\r\n-    background-repeat: no-repeat;\r\n-    // background-size: cover;\r\n-}\r\n-\r\n-.c-space{\r\n-    padding: 7rem 3rem 7rem 3rem;\r\n-}\r\n-\r\n-h2{\r\n-    font-size: 4rem;\r\n+    padding-bottom: 2rem;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751223817938,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,5 +28,6 @@\n \r\n h2{\r\n     font-size: 4rem;\r\n     padding-bottom: 2rem;\r\n+    font-weight: normal;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751223894451,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,5 +29,20 @@\n h2{\r\n     font-size: 4rem;\r\n     padding-bottom: 2rem;\r\n     font-weight: normal;\r\n+\r\n+        &::after{\r\n+        content: \"✦\";\r\n+        position: absolute;\r\n+        top: -10px;\r\n+        right: -10px;\r\n+        opacity: 0;\r\n+        color: #f6e6b4;\r\n+        animation: none;\r\n+        pointer-events: none;\r\n+    }\r\n+\r\n+    &::after{\r\n+        animation: twinkle 3s ease-in-out forwards;\r\n+    }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751223913643,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n     font-size: 4rem;\r\n     padding-bottom: 2rem;\r\n     font-weight: normal;\r\n \r\n-        &::after{\r\n+    &::after{\r\n         content: \"✦\";\r\n         position: absolute;\r\n         top: -10px;\r\n         right: -10px;\r\n@@ -41,8 +41,8 @@\n         animation: none;\r\n         pointer-events: none;\r\n     }\r\n \r\n-    &::after{\r\n+    &:hover::after{\r\n         animation: twinkle 3s ease-in-out forwards;\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751223937291,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,5 +44,12 @@\n \r\n     &:hover::after{\r\n         animation: twinkle 3s ease-in-out forwards;\r\n     }\r\n+}\r\n+\r\n+// animation\r\n+@keyframes twinkle {\r\n+    0%   { opacity: 0; transform: scale(0.2) rotate(0deg); }\r\n+    50%  { opacity: 1; transform: scale(1.2) rotate(45deg); }\r\n+    100% { opacity: 0; transform: scale(0.6) rotate(90deg); }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751224270048,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,8 +29,9 @@\n h2{\r\n     font-size: 4rem;\r\n     padding-bottom: 2rem;\r\n     font-weight: normal;\r\n+    position: relative;\r\n \r\n     &::after{\r\n         content: \"✦\";\r\n         position: absolute;\r\n"
+                },
+                {
+                    "date": 1751224364072,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,8 +29,10 @@\n h2{\r\n     font-size: 4rem;\r\n     padding-bottom: 2rem;\r\n     font-weight: normal;\r\n+\r\n+    .twinkle-hover{\r\n     position: relative;\r\n \r\n     &::after{\r\n         content: \"✦\";\r\n@@ -46,8 +48,9 @@\n     &:hover::after{\r\n         animation: twinkle 3s ease-in-out forwards;\r\n     }\r\n }\r\n+}\r\n \r\n // animation\r\n @keyframes twinkle {\r\n     0%   { opacity: 0; transform: scale(0.2) rotate(0deg); }\r\n"
+                },
+                {
+                    "date": 1751224375811,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,24 +33,24 @@\n \r\n     .twinkle-hover{\r\n     position: relative;\r\n \r\n-    &::after{\r\n-        content: \"✦\";\r\n-        position: absolute;\r\n-        top: -10px;\r\n-        right: -10px;\r\n-        opacity: 0;\r\n-        color: #f6e6b4;\r\n-        animation: none;\r\n-        pointer-events: none;\r\n-    }\r\n+        &::after{\r\n+            content: \"✦\";\r\n+            position: absolute;\r\n+            top: -10px;\r\n+            right: -10px;\r\n+            opacity: 0;\r\n+            color: #f6e6b4;\r\n+            animation: none;\r\n+            pointer-events: none;\r\n+        }\r\n \r\n-    &:hover::after{\r\n-        animation: twinkle 3s ease-in-out forwards;\r\n-    }\r\n+        &:hover::after{\r\n+            animation: twinkle 3s ease-in-out forwards;\r\n+        }\r\n+  }\r\n }\r\n-}\r\n \r\n // animation\r\n @keyframes twinkle {\r\n     0%   { opacity: 0; transform: scale(0.2) rotate(0deg); }\r\n"
+                },
+                {
+                    "date": 1751224596433,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n     padding-bottom: 2rem;\r\n     font-weight: normal;\r\n \r\n     .twinkle-hover{\r\n-    position: relative;\r\n+       position: relative;\r\n \r\n         &::after{\r\n             content: \"✦\";\r\n             position: absolute;\r\n@@ -43,13 +43,13 @@\n             color: #f6e6b4;\r\n             animation: none;\r\n             pointer-events: none;\r\n         }\r\n-\r\n-        &:hover::after{\r\n+    }\r\n+    \r\n+    &:hover .twinkle-hover::after{\r\n             animation: twinkle 3s ease-in-out forwards;\r\n         }\r\n-  }\r\n }\r\n \r\n // animation\r\n @keyframes twinkle {\r\n"
+                },
+                {
+                    "date": 1751224615519,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n         &::after{\r\n             content: \"✦\";\r\n             position: absolute;\r\n             top: -10px;\r\n-            right: -10px;\r\n+            right: -20px;\r\n             opacity: 0;\r\n             color: #f6e6b4;\r\n             animation: none;\r\n             pointer-events: none;\r\n"
+                },
+                {
+                    "date": 1751224658594,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,11 +37,11 @@\n         &::after{\r\n             content: \"✦\";\r\n             position: absolute;\r\n             top: -10px;\r\n-            right: -20px;\r\n+            right: -50px;\r\n             opacity: 0;\r\n-            color: #f6e6b4;\r\n+            color: variables.$colorIvory;\r\n             animation: none;\r\n             pointer-events: none;\r\n         }\r\n     }\r\n"
+                },
+                {
+                    "date": 1751224664652,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n         }\r\n     }\r\n     \r\n     &:hover .twinkle-hover::after{\r\n-            animation: twinkle 3s ease-in-out forwards;\r\n+            animation: twinkle 2s ease-in-out forwards;\r\n         }\r\n }\r\n \r\n // animation\r\n"
+                },
+                {
+                    "date": 1751225853154,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,8 +35,9 @@\n        position: relative;\r\n \r\n         &::after{\r\n             content: \"✦\";\r\n+            font-weight: lighter;\r\n             position: absolute;\r\n             top: -10px;\r\n             right: -50px;\r\n             opacity: 0;\r\n"
+                }
+            ],
+            "date": 1751073523117,
+            "name": "Commit-0",
+            "content": "@import url( \"https://fonts.googleapis.com/css2?family=Forum&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap\");\r\n\r\n@import 'header';\r\n@import 'variables';\r\n\r\n*{\r\n    margin: 0;\r\n    padding: 0;\r\n    box-sizing: border-box;\r\n    background-image: linear-gradient(to bottom, #1A1B2E, #202334 75%, #2F3244 100%);\r\n}\r\n\r\nbody{\r\n    font-family: \"Forum\", serif;\r\n    color: variables.$colorIvory;\r\n}"
+        }
+    ]
+}

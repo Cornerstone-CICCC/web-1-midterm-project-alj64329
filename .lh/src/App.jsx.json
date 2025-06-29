@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/App.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1751070408168,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1751070408168,
+            "name": "Commit-0",
+            "content": "import About from \"./sections/About.jsx\"\nimport Contact from \"./sections/Contact.jsx\"\nimport Experience from \"./sections/Experience.jsx\"\nimport Footer from \"./sections/Footer.jsx\"\nimport Hero from \"./sections/Hero.jsx\"\nimport Navbar from \"./sections/Navbar.jsx\"\nimport Project from \"./sections/Project.jsx\"\n\nconst App = ()=>{\n  return(\n    <main className='max-w-7xl mx-auto'>\n      <Navbar />\n      <Hero /> \n      <About /> \n      <Project />  \n      <Experience />\n      <Contact/>\n      <Footer />\n      </main>\n  )\n}\n\nexport default App"
+        }
+    ]
+}

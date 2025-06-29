@@ -1,0 +1,61 @@
+.about-container {
+
+  .grid-container{
+    padding: 0 10% 0 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 1rem;
+
+  .grid-item_about {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+
+    .image-wrapper{
+      position: relative;
+      width: fit-content;
+
+      .svg_cloud{
+        position: absolute;
+        top: -200px;
+        left: -300px;
+        // left: -110px; this is good for tablet size
+        width: 200%;
+        height: auto;
+        fill: #bcd6ff;
+        fill-opacity: 15%;
+        filter: blur(20px);
+        z-index: 2;
+      }
+
+      .about-img {
+        width: 80%;
+        height: auto;
+        border-radius: 50%;
+      }
+
+    }
+
+  .about-headtext {
+    font-size: 2rem;
+    font-weight: bold;
+
+  }
+
+  .about-subtext {
+    font-size: 1.5rem;
+  }
+}
+}
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: 1280px) {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(6, auto);
+    }
+}
+
