@@ -257,8 +257,9 @@
 .contact-container .contact-section h3 {
   padding-top: 1.5rem;
   padding-bottom: 2rem;
-  font-size: 2.5rem;
-  font-weight: normal;
+  font-size: 2.8rem;
+  font-family: "Great Vibes", cursive;
+  font-weight: lighter;
   color: #faf8f5;
 }
 .contact-container .contact-section .contact-form {
@@ -313,32 +314,68 @@
     padding-top: 3rem;
     width: 100%;
   }
+  .contact-container .contact-section h2 {
+    font-size: 2.4rem;
+  }
 }
 
 .skill-container {
   padding: 0 2rem;
+  max-width: 90vw;
+  margin: 0 auto;
+  color: #e0e6ff;
 }
 .skill-container .skill-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  gap: 8rem;
+  justify-content: center;
+  flex-wrap: wrap;
   margin: 5rem auto;
+  font-family: "Raleway", serif;
+  text-align: center;
 }
 .skill-container .skill-grid .skill-grid-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  background: rgba(30, 30, 50, 0.5);
+  border-radius: 18px;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 0 12px rgba(100, 120, 255, 0.4);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  cursor: default;
+  user-select: none;
+  flex: 1 1 280px; /* grow, shrink, base width */
+  min-width: 220px; /* prevent shrinking too small */
+  max-width: 400px; /* optional max for bigger screens */
+}
+.skill-container .skill-grid .skill-grid-item:hover {
+  box-shadow: 0 0 30px rgba(173, 216, 230, 0.7);
+  transform: translateY(-8px);
 }
 .skill-container .skill-grid .skill-grid-item h3 {
-  font-size: 3rem;
-  padding-bottom: 3rem;
+  font-size: clamp(1.3rem, 2vw, 1.6rem);
+  color: #b0c4ff;
+  margin-bottom: 2rem;
+  text-shadow: 0 0 6px #7a8fff;
 }
 .skill-container .skill-grid .skill-grid-item ul {
-  list-style-type: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 .skill-container .skill-grid .skill-grid-item ul li {
-  font-size: 2rem;
-  padding-bottom: 1rem;
+  font-size: clamp(1rem, 1.5vw, 1.1rem);
+  margin: 0.6rem 0;
+  position: relative;
+  padding-left: 1.2rem;
+  color: #dcdcff;
+}
+.skill-container .skill-grid .skill-grid-item ul li::before {
+  content: "⭐";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1rem;
+  color: #7a8fff;
+  text-shadow: 0 0 3px #7a8fff;
 }
 @media screen and (max-width: 640px) {
   .skill-container .skill-grid {
@@ -354,7 +391,7 @@
     padding-bottom: 6.5rem;
   }
   .skill-container .skill-grid .skill-grid-item h3 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     padding-bottom: 1.7rem;
   }
   .skill-container .skill-grid .skill-grid-item ul {
@@ -423,8 +460,8 @@
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 20px;
-  padding: 2rem 1.5rem;
-  width: 75%;
+  padding: 1.5rem 1.5rem;
+  width: 50%;
   box-shadow: 0 0 15px rgba(100, 100, 255, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   position: relative;
@@ -437,9 +474,10 @@
 .project-container .project-card img {
   width: 100%;
   height: auto;
+  filter: blur(1px);
 }
 .project-container .project-card h3 {
-  padding: 1.4rem;
+  padding: 1rem;
   font-size: 2rem;
 }
 .project-container .project-card .project-desc {
@@ -464,6 +502,10 @@
   box-shadow: 0 0 16px rgba(173, 216, 230, 0.8);
 }
 @media screen and (max-width: 768px) {
+  .project-container .project-card {
+    width: 100%;
+    width: 85%;
+  }
   .project-container .project-card h3 {
     font-weight: 500;
     padding: 1.2rem 0 1.3rem 0;
@@ -517,18 +559,32 @@ h2:hover .twinkle-hover::after {
   animation: twinkle 2.5s ease-in-out forwards;
 }
 
+.about-container .twinkle-hover::after {
+  right: -70px;
+  z-index: 9999;
+}
+
+footer {
+  display: flex;
+  justify-content: end;
+}
+footer p {
+  color: #F6E6B4;
+  margin: 1rem 0;
+}
+
 @keyframes twinkle {
   0% {
     opacity: 0;
-    transform: scale(0.2) rotate(0deg) blur(15px);
+    transform: scale(0.2) rotate(0deg);
   }
   50% {
     opacity: 0.7;
-    transform: scale(1.2) rotate(45deg) blur(8px);
+    transform: scale(1.2) rotate(45deg);
   }
   100% {
     opacity: 0;
-    transform: scale(0.6) rotate(90deg) blur(20px);
+    transform: scale(0.6) rotate(90deg);
   }
 }
 @media screen and (max-width: 768px) {
@@ -536,7 +592,7 @@ h2:hover .twinkle-hover::after {
     padding: 5rem 1rem 1rem 2rem;
   }
   h2 {
-    font-size: 2.5rem;
+    font-size: 2.7rem;
     font-weight: normal;
   }
 }

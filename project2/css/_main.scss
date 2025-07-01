@@ -53,17 +53,32 @@ h2{
             pointer-events: none;
         }
     }
-    
     &:hover .twinkle-hover::after{
             animation: twinkle 2.5s ease-in-out forwards;
         }
 }
 
+.about-container .twinkle-hover::after{
+            right: -70px; // or whatever value you're testing
+            z-index: 9999; // make sure it's on top
+}
+
+footer{
+    display: flex;
+    justify-content: end;
+    p{
+        color: variables.$colorGold;
+        margin: 1rem 0;
+    }
+
+}
+
+
 // animation
 @keyframes twinkle {
-    0%   { opacity: 0; transform: scale(0.2) rotate(0deg) blur(15px); }
-    50%  { opacity: 0.7; transform: scale(1.2) rotate(45deg) blur(8px);}
-    100% { opacity: 0; transform: scale(0.6) rotate(90deg) blur(20px);}
+    0%   { opacity: 0; transform: scale(0.2) rotate(0deg); }
+    50%  { opacity: 0.7; transform: scale(1.2) rotate(45deg);}
+    100% { opacity: 0; transform: scale(0.6) rotate(90deg);}
 }
 
 // Responsive
@@ -73,7 +88,7 @@ h2{
     }
 
     h2{
-    font-size: 2.5rem;
+    font-size: 2.7rem;
     font-weight: normal;
     }
 }

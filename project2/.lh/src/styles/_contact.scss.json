@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 117,
+            "activePatchIndex": 121,
             "patches": [
                 {
                     "date": 1751227537357,
@@ -476,6 +476,22 @@
                 {
                     "date": 1751350309470,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -81,14 +81,8 @@\n \r\n     @media screen and (max-width: 768px) {\r\n         padding-top: 3rem;\r\n         width: 100%;\r\n-\r\n-        .contact-section{\r\n-            margin-top: 1rem;\r\n-\r\n-        }\r\n-\r\n-             \r\n+  \r\n     }\r\n     }\r\n }\r\n"
+                },
+                {
+                    "date": 1751406094742,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,8 +18,9 @@\n         h3{\r\n             padding-top: 1.5rem;\r\n             padding-bottom: 2rem;\r\n             font-size: 2.5rem;\r\n+            font-family: variables.$great-vibes;\r\n             font-weight: normal;\r\n             color: variables.$colorIvory;\r\n         }\r\n \r\n"
+                },
+                {
+                    "date": 1751406115973,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n             padding-top: 1.5rem;\r\n             padding-bottom: 2rem;\r\n             font-size: 2.5rem;\r\n             font-family: variables.$great-vibes;\r\n-            font-weight: normal;\r\n+            font-weight: lighter;\r\n             color: variables.$colorIvory;\r\n         }\r\n \r\n         .contact-form{\r\n"
+                },
+                {
+                    "date": 1751406130008,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n         \r\n         h3{\r\n             padding-top: 1.5rem;\r\n             padding-bottom: 2rem;\r\n-            font-size: 2.5rem;\r\n+            font-size: 2.8rem;\r\n             font-family: variables.$great-vibes;\r\n             font-weight: lighter;\r\n             color: variables.$colorIvory;\r\n         }\r\n"
+                },
+                {
+                    "date": 1751406150804,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -82,8 +82,12 @@\n \r\n     @media screen and (max-width: 768px) {\r\n         padding-top: 3rem;\r\n         width: 100%;\r\n+\r\n+        h2{\r\n+            font-size: 2.4rem;\r\n+        }\r\n   \r\n     }\r\n     }\r\n }\r\n"
                 }
             ],
             "date": 1751227537357,

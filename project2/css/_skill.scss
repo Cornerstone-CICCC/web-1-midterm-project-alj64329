@@ -1,33 +1,70 @@
-@use 'variables' as *;
+@use 'variables';
 
 .skill-container{
     padding: 0 2rem;
+    max-width: 90vw;
+    margin: 0 auto;
+    color: #e0e6ff;
 
     .skill-grid{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: flex;
+        gap: 8rem;
+        justify-content: center;
+        flex-wrap: wrap;
         margin: 5rem auto;
+        font-family: variables.$raleway;
+        text-align: center;
 
         .skill-grid-item{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            background: rgba(30, 30, 50, 0.5);
+            border-radius: 18px;
+            padding: 2rem 1.5rem;
+            box-shadow: 0 0 12px rgba(100, 120, 255, 0.4);
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+            cursor: default;
+            user-select: none;
+
+            flex: 1 1 280px; /* grow, shrink, base width */
+            min-width: 220px; /* prevent shrinking too small */
+            max-width: 400px; /* optional max for bigger screens */
+
+            &:hover{
+              box-shadow: 0 0 30px rgba(173, 216, 230, 0.7);
+              transform: translateY(-8px);
+            }
 
             h3{
-                font-size: 3rem;
-                padding-bottom: 3rem;
+                font-size: clamp(1.3rem, 2vw, 1.6rem);
+                color: #b0c4ff;
+                margin-bottom: 2rem;
+                text-shadow: 0 0 6px #7a8fff;
             }
 
-            ul{
-                list-style-type: none;
-                li{
-                    font-size: 2rem;
-                    padding-bottom: 1rem;
+            ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+
+                li {
+                    font-size: clamp(1rem, 1.5vw, 1.1rem);
+                    margin: 0.6rem 0;
+                    position: relative;
+                    padding-left: 1.2rem;
+                    color: #dcdcff;
+
+                    &::before {
+                        content: '⭐';
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        font-size: 1rem;
+                        color: #7a8fff;
+                        text-shadow: 0 0 3px #7a8fff;
+                    }
                 }
-
             }
-    }
+
+        }
     }
 
     // Responsive
@@ -45,7 +82,7 @@
                 padding-bottom: 6.5rem;
 
                 h3{
-                    font-size: 2rem;
+                    font-size: 1.8rem;
                     padding-bottom: 1.7rem;
                 }
 

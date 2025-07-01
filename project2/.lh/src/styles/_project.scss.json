@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 29,
+            "activePatchIndex": 38,
             "patches": [
                 {
                     "date": 1751350341251,
@@ -124,6 +124,42 @@
                 {
                     "date": 1751352140066,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,9 +58,9 @@\n \r\n         @media screen and (max-width: 768px) {\r\n             h3{\r\n                 font-weight: 500;\r\n-                padding-bottom: 1.2rem;\r\n+                padding: 1.2rem 0 1.3rem 0;\r\n \r\n             }\r\n             .project-desc{\r\n                 font-size: 1.2rem;\r\n"
+                },
+                {
+                    "date": 1751395666491,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,8 +24,9 @@\n \r\n         img{\r\n             width: 100%;\r\n             height: auto;\r\n+            filter: blur(1px);\r\n         }\r\n \r\n         h3{\r\n             padding: 1.4rem;\r\n"
+                },
+                {
+                    "date": 1751403028117,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n         backdrop-filter: blur(10px);\r\n         border: 1px solid rgba(255,255,255,0.1);\r\n         border-radius: 20px;\r\n         padding: 2rem 1.5rem;\r\n-        width: 75%;\r\n+        width: 60%;\r\n         box-shadow: 0 0 15px rgba(100, 100, 255, 0.1);\r\n         transition: transform 0.3s ease, box-shadow 0.3s ease;\r\n         position: relative;\r\n         text-align: center;\r\n"
+                },
+                {
+                    "date": 1751403071891,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n         backdrop-filter: blur(10px);\r\n         border: 1px solid rgba(255,255,255,0.1);\r\n         border-radius: 20px;\r\n         padding: 2rem 1.5rem;\r\n-        width: 60%;\r\n+        width: 50%;\r\n         box-shadow: 0 0 15px rgba(100, 100, 255, 0.1);\r\n         transition: transform 0.3s ease, box-shadow 0.3s ease;\r\n         position: relative;\r\n         text-align: center;\r\n"
+                },
+                {
+                    "date": 1751403097051,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n         background: rgba(255,255,255,0.05);\r\n         backdrop-filter: blur(10px);\r\n         border: 1px solid rgba(255,255,255,0.1);\r\n         border-radius: 20px;\r\n-        padding: 2rem 1.5rem;\r\n+        padding: 1.5rem 1.5rem;\r\n         width: 50%;\r\n         box-shadow: 0 0 15px rgba(100, 100, 255, 0.1);\r\n         transition: transform 0.3s ease, box-shadow 0.3s ease;\r\n         position: relative;\r\n"
+                },
+                {
+                    "date": 1751403120074,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n             filter: blur(1px);\r\n         }\r\n \r\n         h3{\r\n-            padding: 1.4rem;\r\n+            padding: 1rem;\r\n             font-size: 2rem;\r\n         }\r\n \r\n         .project-desc{\r\n"
+                },
+                {
+                    "date": 1751406198138,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,14 +62,16 @@\n                 font-weight: 500;\r\n                 padding: 1.2rem 0 1.3rem 0;\r\n \r\n             }\r\n+            .project-card{\r\n+                width: 85%;\r\n             .project-desc{\r\n                 font-size: 1.2rem;\r\n                 padding-bottom:2rem;\r\n             }\r\n-            \r\n         }\r\n+        }\r\n \r\n     }\r\n \r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751406254490,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,18 +60,17 @@\n         @media screen and (max-width: 768px) {\r\n             h3{\r\n                 font-weight: 500;\r\n                 padding: 1.2rem 0 1.3rem 0;\r\n-\r\n             }\r\n             .project-card{\r\n                 width: 85%;\r\n-            .project-desc{\r\n-                font-size: 1.2rem;\r\n-                padding-bottom:2rem;\r\n+                .project-desc{\r\n+                    font-size: 1.2rem;\r\n+                    padding-bottom:2rem;\r\n+                }\r\n             }\r\n         }\r\n-        }\r\n \r\n     }\r\n \r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751406282381,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,19 +57,18 @@\n             }\r\n         }\r\n \r\n         @media screen and (max-width: 768px) {\r\n+            width: 85%;\r\n             h3{\r\n                 font-weight: 500;\r\n                 padding: 1.2rem 0 1.3rem 0;\r\n             }\r\n-            .project-card{\r\n                 width: 85%;\r\n                 .project-desc{\r\n                     font-size: 1.2rem;\r\n                     padding-bottom:2rem;\r\n                 }\r\n-            }\r\n         }\r\n \r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1751406291768,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n             }\r\n         }\r\n \r\n         @media screen and (max-width: 768px) {\r\n-            width: 85%;\r\n+            width: 90%;\r\n             h3{\r\n                 font-weight: 500;\r\n                 padding: 1.2rem 0 1.3rem 0;\r\n             }\r\n"
                 }
             ],
             "date": 1751350341251,
