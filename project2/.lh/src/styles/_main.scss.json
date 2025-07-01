@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 32,
+            "activePatchIndex": 64,
             "patches": [
                 {
                     "date": 1751073523117,
@@ -136,6 +136,134 @@
                 {
                     "date": 1751225853154,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,8 +35,9 @@\n        position: relative;\r\n \r\n         &::after{\r\n             content: \"✦\";\r\n+            font-weight: lighter;\r\n             position: absolute;\r\n             top: -10px;\r\n             right: -50px;\r\n             opacity: 0;\r\n"
+                },
+                {
+                    "date": 1751226976092,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,8 +53,8 @@\n }\r\n \r\n // animation\r\n @keyframes twinkle {\r\n-    0%   { opacity: 0; transform: scale(0.2) rotate(0deg); }\r\n-    50%  { opacity: 1; transform: scale(1.2) rotate(45deg); }\r\n-    100% { opacity: 0; transform: scale(0.6) rotate(90deg); }\r\n+    0%   { opacity: 0; transform: scale(0.2) rotate(0deg) blur(4px); }\r\n+    50%  { opacity: 1; transform: scale(1.2) rotate(45deg) blur(2px);}\r\n+    100% { opacity: 0; transform: scale(0.6) rotate(90deg) blur(6px);}\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751227006228,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,8 +53,8 @@\n }\r\n \r\n // animation\r\n @keyframes twinkle {\r\n-    0%   { opacity: 0; transform: scale(0.2) rotate(0deg) blur(4px); }\r\n-    50%  { opacity: 1; transform: scale(1.2) rotate(45deg) blur(2px);}\r\n-    100% { opacity: 0; transform: scale(0.6) rotate(90deg) blur(6px);}\r\n+    0%   { opacity: 0; transform: scale(0.2) rotate(0deg) blur(8px); }\r\n+    50%  { opacity: 1; transform: scale(1.2) rotate(45deg) blur(6px);}\r\n+    100% { opacity: 0; transform: scale(0.6) rotate(90deg) blur(8px);}\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751227026835,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,7 +54,7 @@\n \r\n // animation\r\n @keyframes twinkle {\r\n     0%   { opacity: 0; transform: scale(0.2) rotate(0deg) blur(8px); }\r\n-    50%  { opacity: 1; transform: scale(1.2) rotate(45deg) blur(6px);}\r\n+    50%  { opacity: 0.5; transform: scale(1.2) rotate(45deg) blur(6px);}\r\n     100% { opacity: 0; transform: scale(0.6) rotate(90deg) blur(8px);}\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751227042517,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,7 +54,7 @@\n \r\n // animation\r\n @keyframes twinkle {\r\n     0%   { opacity: 0; transform: scale(0.2) rotate(0deg) blur(8px); }\r\n-    50%  { opacity: 0.5; transform: scale(1.2) rotate(45deg) blur(6px);}\r\n+    50%  { opacity: 0.7; transform: scale(1.2) rotate(45deg) blur(6px);}\r\n     100% { opacity: 0; transform: scale(0.6) rotate(90deg) blur(8px);}\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751227084195,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n        position: relative;\r\n \r\n         &::after{\r\n             content: \"✦\";\r\n-            font-weight: lighter;\r\n+            font-weight: 100;\r\n             position: absolute;\r\n             top: -10px;\r\n             right: -50px;\r\n             opacity: 0;\r\n"
+                },
+                {
+                    "date": 1751227094563,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n        position: relative;\r\n \r\n         &::after{\r\n             content: \"✦\";\r\n-            font-weight: 100;\r\n+            font-weight: 200;\r\n             position: absolute;\r\n             top: -10px;\r\n             right: -50px;\r\n             opacity: 0;\r\n"
+                },
+                {
+                    "date": 1751227101594,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,9 +47,9 @@\n         }\r\n     }\r\n     \r\n     &:hover .twinkle-hover::after{\r\n-            animation: twinkle 2s ease-in-out forwards;\r\n+            animation: twinkle 3s ease-in-out forwards;\r\n         }\r\n }\r\n \r\n // animation\r\n"
+                },
+                {
+                    "date": 1751227107311,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,60 @@\n+@use 'variables';\r\n+@use 'header';\r\n+@use 'hero';\r\n+@use 'about';\r\n+\r\n+\r\n+@import url( \"https://fonts.googleapis.com/css2?family=Forum&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap\");\r\n+\r\n+\r\n+*{\r\n+    margin: 0;\r\n+    padding: 0;\r\n+    box-sizing: border-box;\r\n+    scroll-behavior: smooth;\r\n+}\r\n+\r\n+html, body{\r\n+    font-family: \"Forum\", serif;\r\n+    color:variables.$colorIvory;\r\n+    background-image: linear-gradient(to bottom, #1A1B2E, #202334 75%, #2F3244 100%);\r\n+    background-repeat: no-repeat;\r\n+    // background-size: cover;\r\n+}\r\n+\r\n+.c-space{\r\n+    padding: 7rem 3rem 7rem 3rem;\r\n+}\r\n+\r\n+h2{\r\n+    font-size: 4rem;\r\n+    padding-bottom: 2rem;\r\n+    font-weight: normal;\r\n+\r\n+    .twinkle-hover{\r\n+       position: relative;\r\n+\r\n+        &::after{\r\n+            content: \"✦\";\r\n+            font-weight: 200;\r\n+            position: absolute;\r\n+            top: -10px;\r\n+            right: -50px;\r\n+            opacity: 0;\r\n+            color: variables.$colorIvory;\r\n+            animation: none;\r\n+            pointer-events: none;\r\n+        }\r\n+    }\r\n+    \r\n+    &:hover .twinkle-hover::after{\r\n+            animation: twinkle 2.5s ease-in-out forwards;\r\n+        }\r\n+}\r\n+\r\n+// animation\r\n+@keyframes twinkle {\r\n+    0%   { opacity: 0; transform: scale(0.2) rotate(0deg) blur(8px); }\r\n+    50%  { opacity: 0.7; transform: scale(1.2) rotate(45deg) blur(6px);}\r\n+    100% { opacity: 0; transform: scale(0.6) rotate(90deg) blur(8px);}\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751227128262,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,10 @@\n        position: relative;\r\n \r\n         &::after{\r\n             content: \"✦\";\r\n-            font-weight: 200;\r\n+            font-weight: lighter;\r\n+            font-size: 1rem;\r\n             position: absolute;\r\n             top: -10px;\r\n             right: -50px;\r\n             opacity: 0;\r\n@@ -56,65 +57,5 @@\n @keyframes twinkle {\r\n     0%   { opacity: 0; transform: scale(0.2) rotate(0deg) blur(8px); }\r\n     50%  { opacity: 0.7; transform: scale(1.2) rotate(45deg) blur(6px);}\r\n     100% { opacity: 0; transform: scale(0.6) rotate(90deg) blur(8px);}\r\n-}\n-@use 'variables';\r\n-@use 'header';\r\n-@use 'hero';\r\n-@use 'about';\r\n-\r\n-\r\n-@import url( \"https://fonts.googleapis.com/css2?family=Forum&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap\");\r\n-\r\n-\r\n-*{\r\n-    margin: 0;\r\n-    padding: 0;\r\n-    box-sizing: border-box;\r\n-    scroll-behavior: smooth;\r\n-}\r\n-\r\n-html, body{\r\n-    font-family: \"Forum\", serif;\r\n-    color:variables.$colorIvory;\r\n-    background-image: linear-gradient(to bottom, #1A1B2E, #202334 75%, #2F3244 100%);\r\n-    background-repeat: no-repeat;\r\n-    // background-size: cover;\r\n-}\r\n-\r\n-.c-space{\r\n-    padding: 7rem 3rem 7rem 3rem;\r\n-}\r\n-\r\n-h2{\r\n-    font-size: 4rem;\r\n-    padding-bottom: 2rem;\r\n-    font-weight: normal;\r\n-\r\n-    .twinkle-hover{\r\n-       position: relative;\r\n-\r\n-        &::after{\r\n-            content: \"✦\";\r\n-            font-weight: 200;\r\n-            position: absolute;\r\n-            top: -10px;\r\n-            right: -50px;\r\n-            opacity: 0;\r\n-            color: variables.$colorIvory;\r\n-            animation: none;\r\n-            pointer-events: none;\r\n-        }\r\n-    }\r\n-    \r\n-    &:hover .twinkle-hover::after{\r\n-            animation: twinkle 3s ease-in-out forwards;\r\n-        }\r\n-}\r\n-\r\n-// animation\r\n-@keyframes twinkle {\r\n-    0%   { opacity: 0; transform: scale(0.2) rotate(0deg) blur(8px); }\r\n-    50%  { opacity: 0.7; transform: scale(1.2) rotate(45deg) blur(6px);}\r\n-    100% { opacity: 0; transform: scale(0.6) rotate(90deg) blur(8px);}\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751227141306,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,9 +36,9 @@\n \r\n         &::after{\r\n             content: \"✦\";\r\n             font-weight: lighter;\r\n-            font-size: 1rem;\r\n+            font-size: 1.5rem;\r\n             position: absolute;\r\n             top: -10px;\r\n             right: -50px;\r\n             opacity: 0;\r\n"
+                },
+                {
+                    "date": 1751227152439,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,9 +36,9 @@\n \r\n         &::after{\r\n             content: \"✦\";\r\n             font-weight: lighter;\r\n-            font-size: 1.5rem;\r\n+            font-size: 2.5rem;\r\n             position: absolute;\r\n             top: -10px;\r\n             right: -50px;\r\n             opacity: 0;\r\n"
+                },
+                {
+                    "date": 1751227158843,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,9 @@\n             font-weight: lighter;\r\n             font-size: 2.5rem;\r\n             position: absolute;\r\n             top: -10px;\r\n-            right: -50px;\r\n+            right: -55px;\r\n             opacity: 0;\r\n             color: variables.$colorIvory;\r\n             animation: none;\r\n             pointer-events: none;\r\n"
+                },
+                {
+                    "date": 1751227370177,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,8 +54,8 @@\n }\r\n \r\n // animation\r\n @keyframes twinkle {\r\n-    0%   { opacity: 0; transform: scale(0.2) rotate(0deg) blur(8px); }\r\n-    50%  { opacity: 0.7; transform: scale(1.2) rotate(45deg) blur(6px);}\r\n-    100% { opacity: 0; transform: scale(0.6) rotate(90deg) blur(8px);}\r\n+    0%   { opacity: 0; transform: scale(0.2) rotate(0deg) blur(15px); }\r\n+    50%  { opacity: 0.7; transform: scale(1.2) rotate(45deg) blur(8px);}\r\n+    100% { opacity: 0; transform: scale(0.6) rotate(90deg) blur(10px);}\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751227383809,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,6 +56,6 @@\n // animation\r\n @keyframes twinkle {\r\n     0%   { opacity: 0; transform: scale(0.2) rotate(0deg) blur(15px); }\r\n     50%  { opacity: 0.7; transform: scale(1.2) rotate(45deg) blur(8px);}\r\n-    100% { opacity: 0; transform: scale(0.6) rotate(90deg) blur(10px);}\r\n+    100% { opacity: 0; transform: scale(0.6) rotate(90deg) blur(20px);}\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751227549190,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n @use 'variables';\r\n @use 'header';\r\n @use 'hero';\r\n @use 'about';\r\n+@use 'contact';\r\n \r\n \r\n @import url( \"https://fonts.googleapis.com/css2?family=Forum&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap\");\r\n \r\n"
+                },
+                {
+                    "date": 1751236875946,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,9 @@\n @use 'header';\r\n @use 'hero';\r\n @use 'about';\r\n @use 'contact';\r\n+@use 'skill';\r\n \r\n \r\n @import url( \"https://fonts.googleapis.com/css2?family=Forum&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap\");\r\n \r\n"
+                },
+                {
+                    "date": 1751263260154,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,63 @@\n+@use 'variables';\r\n+@use 'header';\r\n+@use 'hero';\r\n+@use 'about';\r\n+@use 'contact';\r\n+@use 'skill';\r\n+\r\n+\r\n+@import url( \"https://fonts.googleapis.com/css2?family=Forum&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap\");\r\n+\r\n+\r\n+*{\r\n+    margin: 0;\r\n+    padding: 0;\r\n+    box-sizing: border-box;\r\n+    scroll-behavior: smooth;\r\n+}\r\n+\r\n+html, body{\r\n+    font-family: \"Forum\", serif;\r\n+    color:variables.$colorIvory;\r\n+    background-image: linear-gradient(to bottom, #1A1B2E, #202334 75%, #2F3244 100%);\r\n+    background-repeat: no-repeat;\r\n+    // background-size: cover;\r\n+}\r\n+\r\n+.c-space{\r\n+    padding: 6.5rem 3rem 7rem 3rem;\r\n+}\r\n+\r\n+h2{\r\n+    font-size: 4rem;\r\n+    padding-bottom: 2rem;\r\n+    font-weight: normal;\r\n+\r\n+    .twinkle-hover{\r\n+       position: relative;\r\n+\r\n+        &::after{\r\n+            content: \"✦\";\r\n+            font-weight: lighter;\r\n+            font-size: 2.5rem;\r\n+            position: absolute;\r\n+            top: -10px;\r\n+            right: -55px;\r\n+            opacity: 0;\r\n+            color: variables.$colorIvory;\r\n+            animation: none;\r\n+            pointer-events: none;\r\n+        }\r\n+    }\r\n+    \r\n+    &:hover .twinkle-hover::after{\r\n+            animation: twinkle 2.5s ease-in-out forwards;\r\n+        }\r\n+}\r\n+\r\n+// animation\r\n+@keyframes twinkle {\r\n+    0%   { opacity: 0; transform: scale(0.2) rotate(0deg) blur(15px); }\r\n+    50%  { opacity: 0.7; transform: scale(1.2) rotate(45deg) blur(8px);}\r\n+    100% { opacity: 0; transform: scale(0.6) rotate(90deg) blur(20px);}\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751263273855,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n     // background-size: cover;\r\n }\r\n \r\n .c-space{\r\n-    padding: 6.5rem 3rem 7rem 3rem;\r\n+    padding: 6rem 3rem 7rem 3rem;\r\n }\r\n \r\n h2{\r\n     font-size: 4rem;\r\n@@ -59,68 +59,5 @@\n @keyframes twinkle {\r\n     0%   { opacity: 0; transform: scale(0.2) rotate(0deg) blur(15px); }\r\n     50%  { opacity: 0.7; transform: scale(1.2) rotate(45deg) blur(8px);}\r\n     100% { opacity: 0; transform: scale(0.6) rotate(90deg) blur(20px);}\r\n-}\n-@use 'variables';\r\n-@use 'header';\r\n-@use 'hero';\r\n-@use 'about';\r\n-@use 'contact';\r\n-@use 'skill';\r\n-\r\n-\r\n-@import url( \"https://fonts.googleapis.com/css2?family=Forum&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap\");\r\n-\r\n-\r\n-*{\r\n-    margin: 0;\r\n-    padding: 0;\r\n-    box-sizing: border-box;\r\n-    scroll-behavior: smooth;\r\n-}\r\n-\r\n-html, body{\r\n-    font-family: \"Forum\", serif;\r\n-    color:variables.$colorIvory;\r\n-    background-image: linear-gradient(to bottom, #1A1B2E, #202334 75%, #2F3244 100%);\r\n-    background-repeat: no-repeat;\r\n-    // background-size: cover;\r\n-}\r\n-\r\n-.c-space{\r\n-    padding: 7rem 3rem 7rem 3rem;\r\n-}\r\n-\r\n-h2{\r\n-    font-size: 4rem;\r\n-    padding-bottom: 2rem;\r\n-    font-weight: normal;\r\n-\r\n-    .twinkle-hover{\r\n-       position: relative;\r\n-\r\n-        &::after{\r\n-            content: \"✦\";\r\n-            font-weight: lighter;\r\n-            font-size: 2.5rem;\r\n-            position: absolute;\r\n-            top: -10px;\r\n-            right: -55px;\r\n-            opacity: 0;\r\n-            color: variables.$colorIvory;\r\n-            animation: none;\r\n-            pointer-events: none;\r\n-        }\r\n-    }\r\n-    \r\n-    &:hover .twinkle-hover::after{\r\n-            animation: twinkle 2.5s ease-in-out forwards;\r\n-        }\r\n-}\r\n-\r\n-// animation\r\n-@keyframes twinkle {\r\n-    0%   { opacity: 0; transform: scale(0.2) rotate(0deg) blur(15px); }\r\n-    50%  { opacity: 0.7; transform: scale(1.2) rotate(45deg) blur(8px);}\r\n-    100% { opacity: 0; transform: scale(0.6) rotate(90deg) blur(20px);}\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751306496145,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,9 @@\n @use 'hero';\r\n @use 'about';\r\n @use 'contact';\r\n @use 'skill';\r\n+@use 'experience';\r\n \r\n \r\n @import url( \"https://fonts.googleapis.com/css2?family=Forum&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap\");\r\n \r\n"
+                },
+                {
+                    "date": 1751308451190,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,8 +53,17 @@\n     \r\n     &:hover .twinkle-hover::after{\r\n             animation: twinkle 2.5s ease-in-out forwards;\r\n         }\r\n+\r\n+    // Responsive\r\n+    @media (min-width: 640px) {\r\n+        h2{\r\n+        font-size: 3rem;\r\n+        padding-bottom: 2rem;\r\n+        font-weight: normal;\r\n+        }\r\n+    }\r\n }\r\n \r\n // animation\r\n @keyframes twinkle {\r\n"
+                },
+                {
+                    "date": 1751308487869,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,9 +55,9 @@\n             animation: twinkle 2.5s ease-in-out forwards;\r\n         }\r\n \r\n     // Responsive\r\n-    @media (min-width: 640px) {\r\n+    @media (min-width: 768px) {\r\n         h2{\r\n         font-size: 3rem;\r\n         padding-bottom: 2rem;\r\n         font-weight: normal;\r\n"
+                },
+                {
+                    "date": 1751308499463,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n \r\n     // Responsive\r\n     @media (min-width: 768px) {\r\n         h2{\r\n-        font-size: 3rem;\r\n+        font-size: 2.5rem;\r\n         padding-bottom: 2rem;\r\n         font-weight: normal;\r\n         }\r\n     }\r\n"
+                },
+                {
+                    "date": 1751308585352,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,21 +53,21 @@\n     \r\n     &:hover .twinkle-hover::after{\r\n             animation: twinkle 2.5s ease-in-out forwards;\r\n         }\r\n-\r\n-    // Responsive\r\n-    @media (min-width: 768px) {\r\n-        h2{\r\n-        font-size: 2.5rem;\r\n-        padding-bottom: 2rem;\r\n-        font-weight: normal;\r\n-        }\r\n-    }\r\n }\r\n \r\n // animation\r\n @keyframes twinkle {\r\n     0%   { opacity: 0; transform: scale(0.2) rotate(0deg) blur(15px); }\r\n     50%  { opacity: 0.7; transform: scale(1.2) rotate(45deg) blur(8px);}\r\n     100% { opacity: 0; transform: scale(0.6) rotate(90deg) blur(20px);}\r\n+}\r\n+\r\n+// Responsive\r\n+@media (min-width: 768px) {\r\n+    h2{\r\n+    font-size: 2rem;\r\n+    padding-bottom: 2rem;\r\n+    font-weight: normal;\r\n+    }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751308666246,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,9 +63,9 @@\n     100% { opacity: 0; transform: scale(0.6) rotate(90deg) blur(20px);}\r\n }\r\n \r\n // Responsive\r\n-@media (min-width: 768px) {\r\n+@media screen and (max-width: 768px) {\r\n     h2{\r\n     font-size: 2rem;\r\n     padding-bottom: 2rem;\r\n     font-weight: normal;\r\n"
+                },
+                {
+                    "date": 1751308717687,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,9 +65,9 @@\n \r\n // Responsive\r\n @media screen and (max-width: 768px) {\r\n     h2{\r\n-    font-size: 2rem;\r\n+    font-size: 2.5rem;\r\n     padding-bottom: 2rem;\r\n     font-weight: normal;\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751308725269,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -66,8 +66,7 @@\n // Responsive\r\n @media screen and (max-width: 768px) {\r\n     h2{\r\n     font-size: 2.5rem;\r\n-    padding-bottom: 2rem;\r\n     font-weight: normal;\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751323418884,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,8 +64,12 @@\n }\r\n \r\n // Responsive\r\n @media screen and (max-width: 768px) {\r\n+    .c-space{\r\n+    padding: 4rem 1.5rem 4rem 1.5rem;\r\n+    }\r\n+\r\n     h2{\r\n     font-size: 2.5rem;\r\n     font-weight: normal;\r\n     }\r\n"
+                },
+                {
+                    "date": 1751327053626,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,9 +65,9 @@\n \r\n // Responsive\r\n @media screen and (max-width: 768px) {\r\n     .c-space{\r\n-    padding: 4rem 1.5rem 4rem 1.5rem;\r\n+    padding: 2rem 1.5rem 4rem 1.5rem;\r\n     }\r\n \r\n     h2{\r\n     font-size: 2.5rem;\r\n"
+                },
+                {
+                    "date": 1751327063861,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,9 +65,9 @@\n \r\n // Responsive\r\n @media screen and (max-width: 768px) {\r\n     .c-space{\r\n-    padding: 2rem 1.5rem 4rem 1.5rem;\r\n+    padding: 2rem 1.5rem 3rem 1.5rem;\r\n     }\r\n \r\n     h2{\r\n     font-size: 2.5rem;\r\n"
+                },
+                {
+                    "date": 1751327087627,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,9 +65,9 @@\n \r\n // Responsive\r\n @media screen and (max-width: 768px) {\r\n     .c-space{\r\n-    padding: 2rem 1.5rem 3rem 1.5rem;\r\n+    padding: 2rem 1.5rem 1rem 1.5rem;\r\n     }\r\n \r\n     h2{\r\n     font-size: 2.5rem;\r\n"
+                },
+                {
+                    "date": 1751327105583,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,9 +65,9 @@\n \r\n // Responsive\r\n @media screen and (max-width: 768px) {\r\n     .c-space{\r\n-    padding: 2rem 1.5rem 1rem 1.5rem;\r\n+    padding: 4rem 1.5rem 2rem 1.5rem;\r\n     }\r\n \r\n     h2{\r\n     font-size: 2.5rem;\r\n"
+                },
+                {
+                    "date": 1751327115304,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,9 +65,9 @@\n \r\n // Responsive\r\n @media screen and (max-width: 768px) {\r\n     .c-space{\r\n-    padding: 4rem 1.5rem 2rem 1.5rem;\r\n+    padding: 4.2rem 1.5rem 2rem 1.5rem;\r\n     }\r\n \r\n     h2{\r\n     font-size: 2.5rem;\r\n"
                 }
             ],
             "date": 1751073523117,

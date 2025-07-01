@@ -1,0 +1,174 @@
+{
+    "sourceFile": "src/styles/_experience.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 39,
+            "patches": [
+                {
+                    "date": 1751307346068,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1751308800693,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,16 @@\n @use 'variables';\r\n \r\n+\r\n .experience-item{\r\n     padding: 0 5rem 5rem 5rem;\r\n-    @media (min-width: 768px) {\r\n+\r\n+    background: rgba(255,255,255,0.08);\r\n+    border-radius: 1rem;\r\n+    border: 1px solid rgba(255,255,255,0.03);\r\n+    backdrop-filter: blur(12px) brightness(1.1);\r\n+\r\n+\r\n+    @media screen and (max-width: 768px) {\r\n       padding-top: 3rem;\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751309809250,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,10 +7,24 @@\n     background: rgba(255,255,255,0.08);\r\n     border-radius: 1rem;\r\n     border: 1px solid rgba(255,255,255,0.03);\r\n     backdrop-filter: blur(12px) brightness(1.1);\r\n+    -webkit-backdrop-filter: blur(12px) brightness(1.1);\r\n+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);\r\n+    position: relative;\r\n+    overflow: hidden;\r\n \r\n+    &::before{\r\n+      content: '';\r\n+      position: absolute;\r\n+      inset: 0;\r\n+      background-image: url('/src/assets/noise.jpg');\r\n+      opacity: 0.03;\r\n+      pointer-events: none;\r\n \r\n+    }\r\n+\r\n+\r\n     @media screen and (max-width: 768px) {\r\n       padding-top: 3rem;\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751309882290,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,13 @@\n       pointer-events: none;\r\n \r\n     }\r\n \r\n+    .experience-content{\r\n+      padding: 3rem 5rem;\r\n+    }\r\n \r\n+\r\n     @media screen and (max-width: 768px) {\r\n       padding-top: 3rem;\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751309904885,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n \r\n     }\r\n \r\n     .experience-content{\r\n-      padding: 3rem 5rem;\r\n+      padding: 3rem 5rem 2rem 5rem;\r\n     }\r\n \r\n \r\n     @media screen and (max-width: 768px) {\r\n"
+                },
+                {
+                    "date": 1751310247255,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n @use 'variables';\r\n \r\n \r\n .experience-item{\r\n-    padding: 0 5rem 5rem 5rem;\r\n+    padding: 5rem;\r\n \r\n     background: rgba(255,255,255,0.08);\r\n     border-radius: 1rem;\r\n     border: 1px solid rgba(255,255,255,0.03);\r\n"
+                },
+                {
+                    "date": 1751310274796,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,13 +22,9 @@\n       pointer-events: none;\r\n \r\n     }\r\n \r\n-    .experience-content{\r\n-      padding: 3rem 5rem 2rem 5rem;\r\n-    }\r\n \r\n-\r\n     @media screen and (max-width: 768px) {\r\n       padding-top: 3rem;\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751310389695,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,9 @@\n \r\n \r\n .experience-item{\r\n     padding: 5rem;\r\n+    margin: 0 5rem;\r\n \r\n     background: rgba(255,255,255,0.08);\r\n     border-radius: 1rem;\r\n     border: 1px solid rgba(255,255,255,0.03);\r\n"
+                },
+                {
+                    "date": 1751310400522,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \r\n \r\n .experience-item{\r\n     padding: 5rem;\r\n-    margin: 0 5rem;\r\n+    margin: 0 10rem;\r\n \r\n     background: rgba(255,255,255,0.08);\r\n     border-radius: 1rem;\r\n     border: 1px solid rgba(255,255,255,0.03);\r\n"
+                },
+                {
+                    "date": 1751310432941,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n @use 'variables';\r\n \r\n \r\n .experience-item{\r\n-    padding: 5rem;\r\n-    margin: 0 10rem;\r\n+    padding: 5%;\r\n+    margin: 5rem 10rem;\r\n \r\n     background: rgba(255,255,255,0.08);\r\n     border-radius: 1rem;\r\n     border: 1px solid rgba(255,255,255,0.03);\r\n"
+                },
+                {
+                    "date": 1751310459255,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n \r\n     background: rgba(255,255,255,0.08);\r\n     border-radius: 1rem;\r\n     border: 1px solid rgba(255,255,255,0.03);\r\n-    backdrop-filter: blur(12px) brightness(1.1);\r\n+    backdrop-filter: blur(10px) brightness(1.1);\r\n     -webkit-backdrop-filter: blur(12px) brightness(1.1);\r\n     box-shadow: 0 8px 32px rgba(0,0,0,0.2);\r\n     position: relative;\r\n     overflow: hidden;\r\n"
+                },
+                {
+                    "date": 1751310465198,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n     background: rgba(255,255,255,0.08);\r\n     border-radius: 1rem;\r\n     border: 1px solid rgba(255,255,255,0.03);\r\n     backdrop-filter: blur(10px) brightness(1.1);\r\n-    -webkit-backdrop-filter: blur(12px) brightness(1.1);\r\n+    -webkit-backdrop-filter: blur(10px) brightness(1.1);\r\n     box-shadow: 0 8px 32px rgba(0,0,0,0.2);\r\n     position: relative;\r\n     overflow: hidden;\r\n \r\n"
+                },
+                {
+                    "date": 1751310471834,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n     background: rgba(255,255,255,0.08);\r\n     border-radius: 1rem;\r\n     border: 1px solid rgba(255,255,255,0.03);\r\n     backdrop-filter: blur(10px) brightness(1.1);\r\n-    -webkit-backdrop-filter: blur(10px) brightness(1.1);\r\n+    -webkit-backdrop-filter: blur(2px) brightness(1.1);\r\n     box-shadow: 0 8px 32px rgba(0,0,0,0.2);\r\n     position: relative;\r\n     overflow: hidden;\r\n \r\n"
+                },
+                {
+                    "date": 1751310484735,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,10 +7,10 @@\n \r\n     background: rgba(255,255,255,0.08);\r\n     border-radius: 1rem;\r\n     border: 1px solid rgba(255,255,255,0.03);\r\n-    backdrop-filter: blur(10px) brightness(1.1);\r\n-    -webkit-backdrop-filter: blur(2px) brightness(1.1);\r\n+    backdrop-filter: blur(2px) brightness(1.1);\r\n+    -webkit-backdrop-filter: blur(2px) brightness(0.9);\r\n     box-shadow: 0 8px 32px rgba(0,0,0,0.2);\r\n     position: relative;\r\n     overflow: hidden;\r\n \r\n"
+                },
+                {
+                    "date": 1751310540868,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,15 @@\n       pointer-events: none;\r\n \r\n     }\r\n \r\n+    .experience-content{\r\n+      .companyName-p{\r\n+        font-size: 1rem;\r\n+      }\r\n+    }\r\n \r\n+\r\n     @media screen and (max-width: 768px) {\r\n       padding-top: 3rem;\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751310546637,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n     }\r\n \r\n     .experience-content{\r\n       .companyName-p{\r\n-        font-size: 1rem;\r\n+        font-size: 1.2rem;\r\n       }\r\n     }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1751310560521,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,8 +26,9 @@\n \r\n     .experience-content{\r\n       .companyName-p{\r\n         font-size: 1.2rem;\r\n+        padding-bottom: 0.8rem;\r\n       }\r\n     }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1751310604612,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,8 +28,12 @@\n       .companyName-p{\r\n         font-size: 1.2rem;\r\n         padding-bottom: 0.8rem;\r\n       }\r\n+      .duration-p{\r\n+        padding-bottom: 0.9rem;\r\n+      }\r\n+\r\n     }\r\n \r\n \r\n     @media screen and (max-width: 768px) {\r\n"
+                },
+                {
+                    "date": 1751310614987,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n     }\r\n \r\n     .experience-content{\r\n       .companyName-p{\r\n-        font-size: 1.2rem;\r\n+        font-size: 1.3rem;\r\n         padding-bottom: 0.8rem;\r\n       }\r\n       .duration-p{\r\n         padding-bottom: 0.9rem;\r\n"
+                },
+                {
+                    "date": 1751310643729,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n @use 'variables';\r\n \r\n \r\n .experience-item{\r\n-    padding: 5%;\r\n+    padding: 5rem;\r\n     margin: 5rem 10rem;\r\n \r\n     background: rgba(255,255,255,0.08);\r\n     border-radius: 1rem;\r\n@@ -25,9 +25,9 @@\n     }\r\n \r\n     .experience-content{\r\n       .companyName-p{\r\n-        font-size: 1.3rem;\r\n+        font-size: 1.5rem;\r\n         padding-bottom: 0.8rem;\r\n       }\r\n       .duration-p{\r\n         padding-bottom: 0.9rem;\r\n"
+                },
+                {
+                    "date": 1751310654322,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n @use 'variables';\r\n \r\n \r\n .experience-item{\r\n-    padding: 5rem;\r\n+    padding: 3rem 5rem;\r\n     margin: 5rem 10rem;\r\n \r\n     background: rgba(255,255,255,0.08);\r\n     border-radius: 1rem;\r\n"
+                },
+                {
+                    "date": 1751310674525,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n     }\r\n \r\n     .experience-content{\r\n       .companyName-p{\r\n-        font-size: 1.5rem;\r\n+        font-size: 2rem;\r\n         padding-bottom: 0.8rem;\r\n       }\r\n       .duration-p{\r\n         padding-bottom: 0.9rem;\r\n"
+                },
+                {
+                    "date": 1751310697967,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,8 +31,11 @@\n       }\r\n       .duration-p{\r\n         padding-bottom: 0.9rem;\r\n       }\r\n+      .summary-p{\r\n+        font-size: 1.5rem;\r\n+      }\r\n \r\n     }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1751310712144,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,8 +30,9 @@\n         padding-bottom: 0.8rem;\r\n       }\r\n       .duration-p{\r\n         padding-bottom: 0.9rem;\r\n+        font-size: 1rem;\r\n       }\r\n       .summary-p{\r\n         font-size: 1.5rem;\r\n       }\r\n"
+                },
+                {
+                    "date": 1751312098619,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,11 +33,15 @@\n         padding-bottom: 0.9rem;\r\n         font-size: 1rem;\r\n       }\r\n       .summary-p{\r\n-        font-size: 1.5rem;\r\n+        font-size: 1.3rem;\r\n       }\r\n \r\n+      .experience-img-container{\r\n+        padding-top: 3rem;\r\n+      }\r\n+\r\n     }\r\n \r\n \r\n     @media screen and (max-width: 768px) {\r\n"
+                },
+                {
+                    "date": 1751313412685,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,14 +4,14 @@\n .experience-item{\r\n     padding: 3rem 5rem;\r\n     margin: 5rem 10rem;\r\n \r\n-    background: rgba(255,255,255,0.08);\r\n+    background: rgba(255,255,255,0.1);\r\n     border-radius: 1rem;\r\n-    border: 1px solid rgba(255,255,255,0.03);\r\n-    backdrop-filter: blur(2px) brightness(1.1);\r\n-    -webkit-backdrop-filter: blur(2px) brightness(0.9);\r\n-    box-shadow: 0 8px 32px rgba(0,0,0,0.2);\r\n+    border: 1px solid rgba(255,255,255,0.2);\r\n+    backdrop-filter: blur(15px);\r\n+    -webkit-backdrop-filter: blur(2px);\r\n+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);\r\n     position: relative;\r\n     overflow: hidden;\r\n \r\n     &::before{\r\n"
+                },
+                {
+                    "date": 1751313449849,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n     padding: 3rem 5rem;\r\n     margin: 5rem 10rem;\r\n \r\n     background: rgba(255,255,255,0.1);\r\n-    border-radius: 1rem;\r\n+    border-radius: 0.5rem;\r\n     border: 1px solid rgba(255,255,255,0.2);\r\n     backdrop-filter: blur(15px);\r\n     -webkit-backdrop-filter: blur(2px);\r\n     box-shadow: 0 4px 20px rgba(0,0,0,0.1);\r\n"
+                },
+                {
+                    "date": 1751314655433,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,8 +38,9 @@\n       }\r\n \r\n       .experience-img-container{\r\n         padding-top: 3rem;\r\n+        gap: 5px;\r\n       }\r\n \r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1751314671006,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,12 @@\n       }\r\n \r\n       .experience-img-container{\r\n         padding-top: 3rem;\r\n-        gap: 5px;\r\n+\r\n+        i{\r\n+          padding-left: 5px;\r\n+        }\r\n       }\r\n \r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1751314679777,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n       .experience-img-container{\r\n         padding-top: 3rem;\r\n \r\n         i{\r\n-          padding-left: 5px;\r\n+          padding-left: 10px;\r\n         }\r\n       }\r\n \r\n     }\r\n"
+                },
+                {
+                    "date": 1751314982329,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,7 +48,7 @@\n     }\r\n \r\n \r\n     @media screen and (max-width: 768px) {\r\n-      padding-top: 3rem;\r\n+\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751315103587,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,6 +49,11 @@\n \r\n \r\n     @media screen and (max-width: 768px) {\r\n \r\n+      .experience-item{\r\n+          padding: 3rem 5rem;\r\n+          margin: 2rem 2rem;\r\n+      }\r\n+\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751315134635,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,9 +51,9 @@\n     @media screen and (max-width: 768px) {\r\n \r\n       .experience-item{\r\n           padding: 3rem 5rem;\r\n-          margin: 2rem 2rem;\r\n+          margin: 0;\r\n       }\r\n \r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751315150244,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,9 +50,9 @@\n \r\n     @media screen and (max-width: 768px) {\r\n \r\n       .experience-item{\r\n-          padding: 3rem 5rem;\r\n+          padding: 0;\r\n           margin: 0;\r\n       }\r\n \r\n     }\r\n"
+                },
+                {
+                    "date": 1751315195416,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,15 +45,14 @@\n         }\r\n       }\r\n \r\n     }\r\n+}\r\n \r\n+@media screen and (max-width: 768px) {\r\n \r\n-    @media screen and (max-width: 768px) {\r\n+  .experience-item{\r\n+      padding: 0;\r\n+      margin: 0;\r\n+  }\r\n \r\n-      .experience-item{\r\n-          padding: 0;\r\n-          margin: 0;\r\n-      }\r\n-\r\n-    }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751315214653,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,9 +50,9 @@\n \r\n @media screen and (max-width: 768px) {\r\n \r\n   .experience-item{\r\n-      padding: 0;\r\n+      padding: 2rem;\r\n       margin: 0;\r\n   }\r\n \r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751320538895,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,8 +27,9 @@\n     .experience-content{\r\n       .companyName-p{\r\n         font-size: 2rem;\r\n         padding-bottom: 0.8rem;\r\n+        padding-right: 1rem;\r\n       }\r\n       .duration-p{\r\n         padding-bottom: 0.9rem;\r\n         font-size: 1rem;\r\n"
+                },
+                {
+                    "date": 1751320564421,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,59 @@\n+@use 'variables';\r\n+\r\n+\r\n+.experience-item{\r\n+    padding: 3rem 5rem;\r\n+    margin: 5rem 10rem;\r\n+\r\n+    background: rgba(255,255,255,0.1);\r\n+    border-radius: 0.5rem;\r\n+    border: 1px solid rgba(255,255,255,0.2);\r\n+    backdrop-filter: blur(15px);\r\n+    -webkit-backdrop-filter: blur(2px);\r\n+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);\r\n+    position: relative;\r\n+    overflow: hidden;\r\n+\r\n+    &::before{\r\n+      content: '';\r\n+      position: absolute;\r\n+      inset: 0;\r\n+      background-image: url('/src/assets/noise.jpg');\r\n+      opacity: 0.03;\r\n+      pointer-events: none;\r\n+\r\n+    }\r\n+\r\n+    .experience-content{\r\n+      .companyName-p{\r\n+        font-size: 2rem;\r\n+        padding-bottom: 0.8rem;\r\n+      }\r\n+      .duration-p{\r\n+        padding-bottom: 0.9rem;\r\n+        font-size: 1rem;\r\n+      }\r\n+      .summary-p{\r\n+        font-size: 1.3rem;\r\n+        padding-right: 2rem;\r\n+      }\r\n+\r\n+      .experience-img-container{\r\n+        padding-top: 3rem;\r\n+\r\n+        i{\r\n+          padding-left: 10px;\r\n+        }\r\n+      }\r\n+\r\n+    }\r\n+}\r\n+\r\n+@media screen and (max-width: 768px) {\r\n+\r\n+  .experience-item{\r\n+      padding: 2rem;\r\n+      margin: 0;\r\n+  }\r\n+\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751320598799,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n         font-size: 1rem;\r\n       }\r\n       .summary-p{\r\n         font-size: 1.3rem;\r\n-        padding-right: 2rem;\r\n+        padding-left: 2rem;\r\n       }\r\n \r\n       .experience-img-container{\r\n         padding-top: 3rem;\r\n@@ -55,64 +55,5 @@\n       padding: 2rem;\r\n       margin: 0;\r\n   }\r\n \r\n-}\n-@use 'variables';\r\n-\r\n-\r\n-.experience-item{\r\n-    padding: 3rem 5rem;\r\n-    margin: 5rem 10rem;\r\n-\r\n-    background: rgba(255,255,255,0.1);\r\n-    border-radius: 0.5rem;\r\n-    border: 1px solid rgba(255,255,255,0.2);\r\n-    backdrop-filter: blur(15px);\r\n-    -webkit-backdrop-filter: blur(2px);\r\n-    box-shadow: 0 4px 20px rgba(0,0,0,0.1);\r\n-    position: relative;\r\n-    overflow: hidden;\r\n-\r\n-    &::before{\r\n-      content: '';\r\n-      position: absolute;\r\n-      inset: 0;\r\n-      background-image: url('/src/assets/noise.jpg');\r\n-      opacity: 0.03;\r\n-      pointer-events: none;\r\n-\r\n-    }\r\n-\r\n-    .experience-content{\r\n-      .companyName-p{\r\n-        font-size: 2rem;\r\n-        padding-bottom: 0.8rem;\r\n-        padding-right: 1rem;\r\n-      }\r\n-      .duration-p{\r\n-        padding-bottom: 0.9rem;\r\n-        font-size: 1rem;\r\n-      }\r\n-      .summary-p{\r\n-        font-size: 1.3rem;\r\n-      }\r\n-\r\n-      .experience-img-container{\r\n-        padding-top: 3rem;\r\n-\r\n-        i{\r\n-          padding-left: 10px;\r\n-        }\r\n-      }\r\n-\r\n-    }\r\n-}\r\n-\r\n-@media screen and (max-width: 768px) {\r\n-\r\n-  .experience-item{\r\n-      padding: 2rem;\r\n-      margin: 0;\r\n-  }\r\n-\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751320628658,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,8 +31,10 @@\n       }\r\n       .duration-p{\r\n         padding-bottom: 0.9rem;\r\n         font-size: 1rem;\r\n+        display: flex;\r\n+        justify-content: end;\r\n       }\r\n       .summary-p{\r\n         font-size: 1.3rem;\r\n         padding-left: 2rem;\r\n"
+                }
+            ],
+            "date": 1751307346068,
+            "name": "Commit-0",
+            "content": "@use 'variables';\r\n\r\n.experience-item{\r\n    padding: 0 5rem 5rem 5rem;\r\n    @media (min-width: 768px) {\r\n      padding-top: 3rem;\r\n    }\r\n}"
+        }
+    ]
+}

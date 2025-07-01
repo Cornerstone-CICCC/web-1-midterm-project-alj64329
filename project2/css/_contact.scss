@@ -1,0 +1,88 @@
+@use 'variables';
+.contact-container{
+
+    h2.contact{
+        padding-bottom: 1rem;
+    }
+    .contact-section{
+        width: 40%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        font-size: 1.5rem;
+        border-color: variables.$colorGold;
+        border: 1px solid;
+        
+        h3{
+            padding-top: 1.5rem;
+            padding-bottom: 2rem;
+            font-size: 2.5rem;
+            font-weight: normal;
+            color: variables.$colorIvory;
+        }
+
+        .contact-form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        color: variables.$colorLavender;
+
+        .field-item{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-bottom: 1rem;
+            width: 150%;
+
+            .field-label{
+                padding-bottom: 0.5rem;
+            }
+
+            input, textarea{
+                border: none;
+                width: 100%;
+                padding: 1rem;
+                background-color: transparent;
+                border: none;
+                border-bottom: 1px solid variables.$colorWinkle;
+                font-family: variables.$forum;
+                font-size: 1rem;
+
+                &:focus{
+                    outline: none;
+                    border-bottom: 1.5px solid variables.$colorMoon;
+                    box-shadow: 0 2px 6px variables.$colorMoon;
+                }
+
+                &::placeholder{
+                    color: variables.$colorLavender;
+                    opacity: 0.7;
+                    font-style: italic;
+                }
+            }
+
+        }
+
+        .field-btn{
+            font-size: 1.2rem;
+            padding-bottom: 1rem;
+            border: none;
+            background-color: transparent;
+            color: variables.$colorIvory;
+            font-family: variables.$playfair;
+            text-shadow: 0 0 0.9rem;
+        }
+
+    }
+
+    @media screen and (max-width: 768px) {
+        padding-top: 3rem;
+        width: 100%;
+             
+    }
+    }
+}

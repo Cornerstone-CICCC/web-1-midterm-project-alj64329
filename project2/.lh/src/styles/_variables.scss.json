@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/styles/_variables.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1751265447036,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1751320286751,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,11 @@\n+@import url( \"https://fonts.googleapis.com/css2?family=Forum&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap\");\r\n+\r\n+$colorIvory:#faf8f5;\r\n+$colorNavy:#1A1B2E;\r\n+$colorLavender: #B9A9D0;\r\n+$colorGold: #F6E6B4;\r\n+$colorBlue:#8eaacd;\r\n+$colorMoon:#cfd9df;\r\n+$forum: 'Forum', serif;\r\n+$great-vibes:'Great Vibes', cursive;\r\n+$playfair:'Playfair Display', serif;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751320482556,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,17 +5,8 @@\n $colorLavender: #B9A9D0;\r\n $colorGold: #F6E6B4;\r\n $colorBlue:#8eaacd;\r\n $colorMoon:#cfd9df;\r\n+$colorWinkle:#b4c5ff;\r\n $forum: 'Forum', serif;\r\n $great-vibes:'Great Vibes', cursive;\r\n-$playfair:'Playfair Display', serif;\n-@import url( \"https://fonts.googleapis.com/css2?family=Forum&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap\");\r\n-\r\n-$colorIvory:#faf8f5;\r\n-$colorNavy:#1A1B2E;\r\n-$colorLavender: #B9A9D0;\r\n-$colorGold: #F6E6B4;\r\n-$colorBlue:#8eaacd;\r\n-$forum: 'Forum', serif;\r\n-$great-vibes:'Great Vibes', cursive;\r\n $playfair:'Playfair Display', serif;\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1751265447036,
+            "name": "Commit-0",
+            "content": "@import url( \"https://fonts.googleapis.com/css2?family=Forum&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap\");\r\n\r\n$colorIvory:#faf8f5;\r\n$colorNavy:#1A1B2E;\r\n$colorLavender: #B9A9D0;\r\n$colorGold: #F6E6B4;\r\n$colorBlue:#8eaacd;\r\n$forum: 'Forum', serif;\r\n$great-vibes:'Great Vibes', cursive;\r\n$playfair:'Playfair Display', serif;"
+        }
+    ]
+}

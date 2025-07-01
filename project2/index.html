@@ -5,14 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <header class="navbar">
         <div class="navbar-container">
-            <button id="menu-toggle" class="menu-button" aria-label="Toggle menu">
-                <img id="menu-icon" src="/assets/menu.svg" alt="toggle"/>
-            </button>
-            <nav class="nav-links destop-nav">
+            <nav class="nav-links desktop-nav">
                 <ul class="nav-ul">
                     <li class="nav-li">
                         <a href="#home">Home</a>
@@ -25,7 +23,33 @@
                     </li>
                     <li class="nav-li"><a href="#experience">Experience</a>
                     </li>
-                    <li class="nav-li"><a href="#conatct">Contact</a>
+                    <li class="nav-li"><a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="nav-links hamburger-nav">
+                <div class="hamburger-menu">
+                    <div class="hamburger-icon" onclick="toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <ul class="hamburger-links">
+                    <li>
+                        <a href="#home" onclick="toggleMenu()">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about" onclick="toggleMenu()">About</a>
+                    </li>
+                    <li>
+                        <a href="#skill" onclick="toggleMenu()">Skill</a>
+                    </li>
+                    <li><a href="#project" onclick="toggleMenu()">Project</a>
+                    </li>
+                    <li><a href="#experience" onclick="toggleMenu()">Experience</a>
+                    </li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -62,6 +86,9 @@
                     <p class="about-headtext">Hi, I'm Ayaka</p>
                     <p class="about-subtext">I'm Ayaka, a mathematics graduate with a growing passion for web develpment. 
                         I enjoy problem-solving and creativity behind building.</p>
+                        <button class="about-btn" onclick="window.open('/src/assets/')">
+                            Download CV
+                        </button>
                 </div>
                 </div>
             </div>
@@ -74,6 +101,7 @@
             <h2>Skills
                 <span class="twinkle-hover"></span>
             </h2>
+
             <div class="skill-grid">
                 <div class="skill-grid-item">
                     <h3>Soft Skill</h3>
@@ -100,18 +128,22 @@
             <h2>Work Experience
                 <span class="twinkle-hover"></span>
             </h2>
-            <div class="experience-item">\
-
-                <div class="experience-img">
-                    <img src="/" alt="experience-img">
-                </div>
+            <div class="experience-item">
 
                 <!-- Content -->
                  <div class="experience-content">
-                    <p class="companyName-p">Comapny Name</p>
-                    <p class="duration-p">position-duration</p>
+                    <p class="companyName-p">Comapny A</p>
+                    <p class="duration-p">position -duration</p>
                     <p class="summary-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                         Labore reprehenderit minima, excepturi explicabo dignissimos dolores. Nostrum sint facilis magni optio amet aliquid, harum saepe velit sapiente quis alias porro illo.</p>
+                    <div class="experience-img-container">
+                        <i class="fa-brands fa-square-js fa-3x" 
+                        style="font-size: 3rem; color: #f7df1e;"></i>   
+                        <i class="fa-brands fa-html5 fa-3x"
+                        style="font-size: 3rem; color: #e34c26;"></i>
+                        <i class="fa-brands fa-css3-alt fa-3x"
+                        style="font-size: 3rem; color: #2965f1;"></i>
+                    </div>
                  </div>
             </div>
         </div>
@@ -131,35 +163,35 @@
         </div>
     </section>
 
-    <section class="c-space" id="contact">           
-        <h2>Contact
+    <section class="c-space contact-container" id="contact">     
+        <h2 class="contact">Contact
             <span class="twinkle-hover"></span>
         </h2>
-
+        <div class="contact-section">    
         <h3>Let's connect</h3>
 
         <form action="" method="get" class="contact-form">
-                <lable class="space-y-3">
-                    <span class="field-lable">Full Name</span>
+                <label class="field-item">
+                    <span class="field-label">Full Name</span>
                     <input type="text" name="name" id="name" placeholder="John Doe" />
-                </lable>
+                </label>
 
-                <lable class="space-y-3">
-                    <span class="field-lable">Email</span>
+                <label class="field-item">
+                    <span class="field-label">Email</span>
                     <input type="email" name="email" id="email" placeholder="johndoe@gmail.com" required />
-                </lable>
+                </label>
 
-                <lable class="space-y-3">
-                    <span class="field-lable">Message</span>
+                <label class="field-item field-message">
+                    <span class="field-label">Message</span>
                     <textarea name="message" rows="5" class="field-input"
                     placeholder="Hi, I'm interested in..." required></textarea>
-                </lable>
+                </label>
 
                 <button type="submit" class="field-btn">
                     Send Message
                 </button>
         </form>
-
+        </div>  
     </section>
 
     <footer>

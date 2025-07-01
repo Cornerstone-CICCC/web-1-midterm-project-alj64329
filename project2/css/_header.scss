@@ -6,26 +6,12 @@
     left: 0;
     right: 0;
     z-index: 999;
+    backdrop-filter: blur(7px) ;
 
     &-container{
         margin: 0 auto;
         padding: 2rem;
     }
-
-
-    .menu-button{
-        background: none;
-        border: none;
-        cursor: pointer;
-        display:flex;
-        align-items: center;
-
-        img{
-            width: 24px;
-            height: 24px;
-        }
-    }
-
 
     .nav-ul{
         list-style-type: none;
@@ -41,40 +27,101 @@
     .nav-li a{
         color:$colorGold;
         text-decoration: none;
-        font-size: 3rem;
+        font-size: 2.5rem;
 
         &:hover{
             text-decoration: underline;
             text-decoration-thickness: 0.1rem;
             text-shadow: 0 0 0.9rem;
-
         }
     }
 
-    .nav-sidebar{
-        overflow: hidden;
-        max-height: 0;
-        transition: max-height 0.3 ease;
+    .hamburger-nav {
+        display: none;
+        .hamburger-menu{
+            position: relative;
+            display: inline-block;
+            margin-top: -1rem;
+        }
+        .hamburger-icon{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 24px;
+            width: 30px;
+            cursor: pointer;
 
+            span{
+                width: 100%;
+                height: 2px;
+                background-color: $colorGold;
+                transition: all 0.3 ease-in-out;
+                text-shadow: 0 0 0.9rem;
+
+                &:hover{
+                    text-shadow: 0 0 1rem;
+                }
+            }
+
+            span:first-child{
+                transform: none;
+                opacity: 1;
+            }
+
+            &.open span:first-child{
+                transform: rotate(45deg) translate(10px, 5px);
+            }
+            &.open span:nth-child(2){
+                opacity: 0;
+            }
+            &.open span:last-child{
+                transform: rotate(-45deg) translate(10px, -5px);
+            }
+
+        }
+        .hamburger-links{
+            list-style-type: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            padding: 0;
+            width: fit-content;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3 ease-in-out;
+
+            &.open{
+                max-height: 300px;
+                padding: 1rem;
+                backdrop-filter: blur(5px);
+                border-radius: 5%;
+            }
+
+            li a{
+                font-size: 1.3rem;
+                color: $colorGold;
+                text-decoration: none;
+                margin-bottom: 1.5rem;
+                display: inline-block;
+
+                &:hover{
+                    text-shadow: 1px 0 1.5rem rgba(255, 255, 120, 1);
+                }
+            }
+        }
     }
-
     // Responsive
-    @media (min-width: 640px) {
-    .menu-button {
-        display: none;
-    }
+    @media screen and (max-width: 768px) {
+        backdrop-filter: none;
 
-    .desktop-nav {
-        display: block;
-    }
-
-    .nav-ul {
-        flex-direction: row;
-        gap: 2rem;
-    }
-
-    .nav-sidebar {
-        display: none;
-    }
+        .desktop-nav {
+            display: none;
+        }
+        .hamburger-nav{
+            display: block;
+        }
+        .hamburger-menu {
+            display: flex;
+        }
     }
 }

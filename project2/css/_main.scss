@@ -2,6 +2,9 @@
 @use 'header';
 @use 'hero';
 @use 'about';
+@use 'contact';
+@use 'skill';
+@use 'experience';
 
 
 @import url( "https://fonts.googleapis.com/css2?family=Forum&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
@@ -23,7 +26,7 @@ html, body{
 }
 
 .c-space{
-    padding: 7rem 3rem 7rem 3rem;
+    padding: 6rem 3rem 7rem 3rem;
 }
 
 h2{
@@ -37,9 +40,10 @@ h2{
         &::after{
             content: "✦";
             font-weight: lighter;
+            font-size: 2.5rem;
             position: absolute;
             top: -10px;
-            right: -50px;
+            right: -55px;
             opacity: 0;
             color: variables.$colorIvory;
             animation: none;
@@ -48,13 +52,25 @@ h2{
     }
     
     &:hover .twinkle-hover::after{
-            animation: twinkle 2s ease-in-out forwards;
+            animation: twinkle 2.5s ease-in-out forwards;
         }
 }
 
 // animation
 @keyframes twinkle {
-    0%   { opacity: 0; transform: scale(0.2) rotate(0deg); }
-    50%  { opacity: 1; transform: scale(1.2) rotate(45deg); }
-    100% { opacity: 0; transform: scale(0.6) rotate(90deg); }
+    0%   { opacity: 0; transform: scale(0.2) rotate(0deg) blur(15px); }
+    50%  { opacity: 0.7; transform: scale(1.2) rotate(45deg) blur(8px);}
+    100% { opacity: 0; transform: scale(0.6) rotate(90deg) blur(20px);}
+}
+
+// Responsive
+@media screen and (max-width: 768px) {
+    .c-space{
+    padding: 4.2rem 1.5rem 2rem 1.5rem;
+    }
+
+    h2{
+    font-size: 2.5rem;
+    font-weight: normal;
+    }
 }
