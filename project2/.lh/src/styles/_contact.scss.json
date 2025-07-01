@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 113,
+            "activePatchIndex": 117,
             "patches": [
                 {
                     "date": 1751227537357,
@@ -460,6 +460,22 @@
                 {
                     "date": 1751328595267,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -81,17 +81,8 @@\n \r\n     @media screen and (max-width: 768px) {\r\n         padding-top: 3rem;\r\n         width: 100%;\r\n-\r\n-        .contact-section{\r\n-            margin-top: 2rem;\r\n-        }\r\n-\r\n-\r\n-\r\n-\r\n-        \r\n-        \r\n+             \r\n     }\r\n     }\r\n }\r\n"
+                },
+                {
+                    "date": 1751342159678,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -81,8 +81,12 @@\n \r\n     @media screen and (max-width: 768px) {\r\n         padding-top: 3rem;\r\n         width: 100%;\r\n+\r\n+        h2{\r\n+            padding-bottom: 1rem;\r\n+        }\r\n              \r\n     }\r\n     }\r\n }\r\n"
+                },
+                {
+                    "date": 1751342172572,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -83,9 +83,9 @@\n         padding-top: 3rem;\r\n         width: 100%;\r\n \r\n         h2{\r\n-            padding-bottom: 1rem;\r\n+            padding-bottom: 2rem;\r\n         }\r\n              \r\n     }\r\n     }\r\n"
+                },
+                {
+                    "date": 1751342258059,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -82,11 +82,13 @@\n     @media screen and (max-width: 768px) {\r\n         padding-top: 3rem;\r\n         width: 100%;\r\n \r\n-        h2{\r\n-            padding-bottom: 2rem;\r\n+        .contact-section{\r\n+            margin-top: 1rem;\r\n+\r\n         }\r\n+\r\n              \r\n     }\r\n     }\r\n }\r\n"
+                },
+                {
+                    "date": 1751350309470,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -81,14 +81,8 @@\n \r\n     @media screen and (max-width: 768px) {\r\n         padding-top: 3rem;\r\n         width: 100%;\r\n-\r\n-        .contact-section{\r\n-            margin-top: 1rem;\r\n-\r\n-        }\r\n-\r\n-             \r\n+  \r\n     }\r\n     }\r\n }\r\n"
                 }
             ],
             "date": 1751227537357,

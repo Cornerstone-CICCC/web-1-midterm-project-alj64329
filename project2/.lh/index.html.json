@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 69,
+            "activePatchIndex": 70,
             "patches": [
                 {
                     "date": 1751071467988,
@@ -284,6 +284,10 @@
                 {
                     "date": 1751322944606,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n </head>\r\n <body>\r\n     <header class=\"navbar\">\r\n         <div class=\"navbar-container\">\r\n-            <nav class=\"nav-links destop-nav\">\r\n+            <nav class=\"nav-links desktop-nav\">\r\n                 <ul class=\"nav-ul\">\r\n                     <li class=\"nav-li\">\r\n                         <a href=\"#home\">Home</a>\r\n                     </li>\r\n"
+                },
+                {
+                    "date": 1751350680008,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -148,18 +148,23 @@\n             </div>\r\n         </div>\r\n     </section>\r\n \r\n-        <section class=\"c-space\" id=\"project\">\r\n+    <!-- Project -->\r\n+    <section class=\"c-space\" id=\"project\">\r\n+            <h2>Project\r\n+            <span class=\"twinkle-hover\"></span>\r\n+        </h2>\r\n         <div class=\"project-container\">\r\n-            <h2>Project\r\n-                <span class=\"twinkle-hover\"></span>\r\n-            </h2>\r\n-            <div class=\"project-item\">\\\r\n+            <div class=\"project-card\">\r\n                 <!-- Content -->\r\n-                 <div class=\"project-content\">\r\n-             Labore reprehenderit minima, excepturi explicabo dignissimos dolores. Nostrum sint facilis magni optio amet aliquid, harum saepe velit sapiente quis alias porro illo.</p>\r\n+                 <img src=\"/src/assets/project1.png\" alt=\"project 1\">\r\n+                 <h3 class=\"project-title\">Portfolio</h3>\r\n+                 <div class=\"project-desc\">\r\n+                    Labore reprehenderit minima, excepturi explicabo dignissimos dolores. \r\n+                    Nostrum sint facilis magni optio amet aliquid, harum saepe velit sapiente quis alias porro illo.\r\n                  </div>\r\n+                 <a href=\"#\" class=\"project-link\">View Project</a>\r\n             </div>\r\n         </div>\r\n     </section>\r\n \r\n"
                 }
             ],
             "date": 1751071467988,

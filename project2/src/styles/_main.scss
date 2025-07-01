@@ -5,6 +5,7 @@
 @use 'contact';
 @use 'skill';
 @use 'experience';
+@use 'project';
 
 
 @import url( "https://fonts.googleapis.com/css2?family=Forum&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
@@ -17,11 +18,13 @@
     scroll-behavior: smooth;
 }
 
+
 html, body{
     font-family: "Forum", serif;
     color:variables.$colorIvory;
     background-image: linear-gradient(to bottom, #1A1B2E, #202334 75%, #2F3244 100%);
     background-repeat: no-repeat;
+    max-width: 100vw;
     // background-size: cover;
 }
 
@@ -66,7 +69,7 @@ h2{
 // Responsive
 @media screen and (max-width: 768px) {
     .c-space{
-    padding: 4.2rem 1.5rem 2rem 1.5rem;
+    padding: 5rem 1rem 1rem 2rem;
     }
 
     h2{

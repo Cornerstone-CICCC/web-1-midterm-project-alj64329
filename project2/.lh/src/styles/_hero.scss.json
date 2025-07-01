@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 33,
+            "activePatchIndex": 40,
             "patches": [
                 {
                     "date": 1751074826408,
@@ -140,6 +140,34 @@
                 {
                     "date": 1751323605570,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n .hero-section{\r\n     height: 100;\r\n \r\n     .hero-content{\r\n-        padding: 25rem 5rem 6rem 5rem;\r\n+        padding: 28rem 5rem 6rem 5rem;\r\n         font-size: 5rem;\r\n         align-items: end;\r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1751337678469,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n \r\n     // Responsive for mobile\r\n     @media screen and (max-width: 768px) {\r\n         .hero-content{\r\n-            padding: 18rem 5rem 5rem 2rem;\r\n+            padding: 5rem 5rem 5rem 2rem;\r\n             font-size: 3rem;\r\n             align-items: end;\r\n         }\r\n     }\r\n"
+                },
+                {
+                    "date": 1751337717774,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n     @media screen and (max-width: 768px) {\r\n         .hero-content{\r\n             padding: 5rem 5rem 5rem 2rem;\r\n             font-size: 3rem;\r\n-            align-items: end;\r\n+            align-items: start;\r\n         }\r\n     }\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1751337794369,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n \r\n     // Responsive for mobile\r\n     @media screen and (max-width: 768px) {\r\n         .hero-content{\r\n-            padding: 5rem 5rem 5rem 2rem;\r\n+            padding: 10rem 5rem 5rem 2rem;\r\n             font-size: 3rem;\r\n             align-items: start;\r\n         }\r\n     }\r\n"
+                },
+                {
+                    "date": 1751337824461,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n \r\n     // Responsive for mobile\r\n     @media screen and (max-width: 768px) {\r\n         .hero-content{\r\n-            padding: 10rem 5rem 5rem 2rem;\r\n+            padding: 10rem 0 5rem 0;\r\n             font-size: 3rem;\r\n             align-items: start;\r\n         }\r\n     }\r\n"
+                },
+                {
+                    "date": 1751337837864,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n \r\n     // Responsive for mobile\r\n     @media screen and (max-width: 768px) {\r\n         .hero-content{\r\n-            padding: 10rem 0 5rem 0;\r\n+            padding: 10rem 2rem 5rem 0;\r\n             font-size: 3rem;\r\n             align-items: start;\r\n         }\r\n     }\r\n"
+                },
+                {
+                    "date": 1751337848725,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n \r\n     // Responsive for mobile\r\n     @media screen and (max-width: 768px) {\r\n         .hero-content{\r\n-            padding: 10rem 2rem 5rem 0;\r\n+            padding: 10rem 0 5rem 2rem;\r\n             font-size: 3rem;\r\n             align-items: start;\r\n         }\r\n     }\r\n"
+                },
+                {
+                    "date": 1751337859419,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n \r\n     // Responsive for mobile\r\n     @media screen and (max-width: 768px) {\r\n         .hero-content{\r\n-            padding: 10rem 0 5rem 2rem;\r\n+            padding: 10rem 0 3rem 2rem;\r\n             font-size: 3rem;\r\n             align-items: start;\r\n         }\r\n     }\r\n"
                 }
             ],
             "date": 1751074826408,
