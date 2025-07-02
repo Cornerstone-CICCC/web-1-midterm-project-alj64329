@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="navbar-container">
+            <nav class="nav-links desktop-nav">
+                <ul class="nav-ul">
+                    <li class="nav-li">
+                        <a href="#home">Home</a>
+                    </li>
+                    <li class="nav-li"><a href="#about">About</a>
+                    </li>
+                    <li class="nav-li"><a href="#skill">Skill</a>
+                    </li>
+                    <li class="nav-li"><a href="#project">Project</a>
+                    </li>
+                    <li class="nav-li"><a href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-li"><a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="nav-links hamburger-nav">
+                <div class="hamburger-menu">
+                    <div class="hamburger-icon" onclick="toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <ul class="hamburger-links">
+                    <li>
+                        <a href="#home" onclick="toggleMenu()">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about" onclick="toggleMenu()">About</a>
+                    </li>
+                    <li>
+                        <a href="#skill" onclick="toggleMenu()">Skill</a>
+                    </li>
+                    <li><a href="#project" onclick="toggleMenu()">Project</a>
+                    </li>
+                    <li><a href="#experience" onclick="toggleMenu()">Experience</a>
+                    </li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-section" id="home">
+        <div class="hero-content">
+            <p class="hero-content_p">
+                Hello,
+            </p>
+            <p class="hero-content_p">
+                I'm Ayaka Miyazaki
+            </p>
+        </div>
+    </section>
+
+    <section class="c-space" id="about">
+        <div class="about-container">
+            <h2>About Me
+                <span class="twinkle-hover"></span>
+            </h2>
+            <div class="grid-container">
+                <div class="grid-item_about">
+                    <div class="image-wrapper">
+                        <svg viewBox = "0 0 220 160" class="svg_cloud">
+                            <path d="M60,120 C20,120 20,70 60,70 C65,40 95,40 100,70 C135,65 140,90 120,100 C150,100 160,130 130,130 C120,140 90,140 80,130 C70,140 60,140 60,120 Z" />
+                        </svg>
+                        <img src="/src/assets/aboutMe.png" alt="about me pic" class="about-img"/>
+                        </div>
+                </div>
+                <div class="grid-item_about">
+                <div class="about-text">
+                    <p class="about-headtext">Hi,</p>
+                    <p class="about-subtext">I'm Ayaka, a mathematics graduate with a growing passion for web development. 
+                        I enjoy problem-solving and creativity behind building.</p>
+                        <button class="about-btn" onclick="window.open('/src/assets/')">
+                            Download CV
+                        </button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="c-space" id="skill">
+        <div class="skill-container">
+            <h2>Skills
+                <span class="twinkle-hover"></span>
+            </h2>
+
+            <div class="skill-grid">
+                <div class="skill-grid-item">
+                    <h3>Soft Skill</h3>
+                    <ul>
+                        <li>Problem-solving</li>
+                        <li>Ambitious</li>
+                        <li>Willingness to Learn</li>
+                        <li>Attention to Detail</li>
+                        <li>Adaptability</li>
+                    </ul>
+                </div>
+                <div class="skill-grid-item">
+                    <h3>Hard Skill</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="c-space" id="experience">
+        <div class="experience-container">
+            <h2>Work Experience
+                <span class="twinkle-hover"></span>
+            </h2>
+            <div class="experience-item">
+
+                <!-- Content -->
+                 <div class="experience-content">
+                    <p class="companyName-p">Comapny A</p>
+                    <p class="duration-p">position -duration</p>
+                    <p class="summary-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Labore reprehenderit minima, excepturi explicabo dignissimos dolores. Nostrum sint facilis magni optio amet aliquid, harum saepe velit sapiente quis alias porro illo.</p>
+                    <div class="experience-img-container">
+                        <i class="fa-brands fa-square-js fa-3x" 
+                        style="font-size: 3rem; color: #f7df1e;"></i>   
+                        <i class="fa-brands fa-html5 fa-3x"
+                        style="font-size: 3rem; color: #e34c26;"></i>
+                        <i class="fa-brands fa-css3-alt fa-3x"
+                        style="font-size: 3rem; color: #2965f1;"></i>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project -->
+    <section class="c-space" id="project">
+            <h2>Project
+            <span class="twinkle-hover"></span>
+        </h2>
+        <div class="project-container">
+            <div class="project-card">
+                <!-- Content -->
+                 <img src="/src/assets/project1.png" alt="project 1">
+                 <h3 class="project-title">Portfolio</h3>
+                 <div class="project-desc">
+                    Labore reprehenderit minima, excepturi explicabo dignissimos dolores. 
+                    Nostrum sint facilis magni optio amet aliquid, harum saepe velit sapiente quis alias porro illo.
+                 </div>
+                 <a href="#" class="project-link">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="c-space contact-container" id="contact">     
+        <h2 class="contact">Contact Me
+            <span class="twinkle-hover"></span>
+        </h2>
+        <div class="contact-section">    
+        <h3>Let's connect</h3>
+
+        <form action="" method="get" class="contact-form">
+                <label class="field-item">
+                    <span class="field-label">Full Name</span>
+                    <input type="text" name="name" id="name" placeholder="John Doe" />
+                </label>
+
+                <label class="field-item">
+                    <span class="field-label">Email</span>
+                    <input type="email" name="email" id="email" placeholder="johndoe@gmail.com" required />
+                </label>
+
+                <label class="field-item field-message">
+                    <span class="field-label">Message</span>
+                    <textarea name="message" rows="5" class="field-input"
+                    placeholder="Hi, I'm interested in..." required></textarea>
+                </label>
+
+                <button type="submit" class="field-btn">
+                    Send Message
+                </button>
+        </form>
+        </div>  
+    </section>
+
+    <footer>
+        <p>Copyright &#169; 2025 Ayaka Miyazaki. All Rights Reserved</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
